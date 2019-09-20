@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext');
+// @font-face {
+// 	font-family: 'tannenberg_fettregular';
+// 	src: url('../fonts/tannenbergfett-webfont.woff'), url('../fonts/tannenbergfett-webfont.woff2');
+// }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 166%;
+  background: url('../images/bg-hi.jpg') center top / cover repeat;
+}
+@media screen and (max-width: 1919px) {
+	body {
+		background: url('../images/bg-md.jpg') center top / cover repeat;
+	}
+}
+@media screen and (max-width: 1024px) {
+	body {
+		background: url('../images/bg-lo.jpg') center top / cover repeat;
+	}
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+	border: 1px solid white;
+}

@@ -1,0 +1,88 @@
+section#section-skills {
+	padding: 0px 0px;
+	// width: 688px;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	height: auto;
+
+	& .wrapper {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 688px;
+		margin: 0 auto;
+		background: rgba(50, 50, 50, 0.55);
+	}
+
+	& .skill-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: inherit;
+		height: 3rem;
+		margin-bottom: 3px;
+		position: relative;
+
+		& .skill {
+			color: #fff;
+			font-size: 1.33rem;
+			line-height: 166%;
+			&.skill__label {
+				width: 336px;
+			}
+			&.skill__value {
+				width: 64px;
+				font-style: italic;
+			}
+			&.skill__bar {
+				opacity: 0.75;
+				width: 288px;
+				height: 2.25rem;
+				overflow: hidden;
+				& .inner {
+			    background: linear-gradient(to right, #445, dodgerblue);
+			    width: 288px;
+			    height: inherit;
+
+				}
+			}
+			&:before {
+				content: '';
+				width: 288px;
+				border: 1px solid darkgray;
+				height: 2.25rem;
+				position: absolute;
+				left: 399px;
+				top: -1px;
+				z-index: -1;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 90%;
+		background: red;
+
+		.skill-wrapper {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: inherit;
+			height: 6rem;
+			// margin-bottom: 3px;
+			position: relative;
+		}
+		.skill-wrapper .skill.skill__label {
+			width: 100%;
+			background: gold;
+		}
+		.skill__value {
+
+		}
+		.skill-wrapper .skill.skill__bar {
+			display: block;
+			background: dodgerblue;
+		}
+	}
+}

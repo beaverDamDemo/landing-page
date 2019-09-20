@@ -1,0 +1,72 @@
+{
+	"skills": [
+		{
+			"label": "html, css, js, JQuery",
+			"value": 0.9
+		},
+		{
+			"label": "Greensock animation",
+			"value": 0.85
+		},
+		{
+			"label": "Snapsvg animation",
+			"value": 0.75
+		},
+		{
+			"label": "Adobe graphic tools",
+			"value": 0.7
+		},
+		{
+			"label": "Adobe Flash Professional",
+			"value": 0.6
+		},
+		{
+			"label": "Github",
+			"value": 0.6
+		},
+		{
+			"label": "Vuejs",
+			"value": 0.15
+		},
+		{
+			"label": "responsive design",
+			"value": 0.75
+		},
+		{
+			"label": "C#",
+			"value": 0.1
+		},
+		{
+			"label": "C/C++",
+			"value": 0.05
+		},
+		{
+			"label": "C++ Nvidia Cuda",
+			"value": 0.04
+		},
+		{
+			"label": "Arduino programming",
+			"value": 0.15
+		},
+		{
+			"label": "cars chiptuning",
+			"value": 0.5
+		},
+		{
+			"label": "Java",
+			"value": 0.05
+		},
+		{
+			"label": "fpga/vhdl",
+			"value": 0.05
+		},
+		{
+			"label": "Mongodb",
+			"value": 0.05
+		},
+		{
+			"label": "assembly language",
+			"value": 0.05
+		}
+	]
+}

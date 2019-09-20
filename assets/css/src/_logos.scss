@@ -1,0 +1,26 @@
+.logo {
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	&.logo-css3 {
+		background: url('../images/logo-css3.svg');
+	}
+	&.logo-es6 {
+		background: url('../images/logo-es6.svg');
+	}
+	&.logo-html5 {
+		background: url('../images/logo-html5.svg');
+	}
+	&.logo-snapsvg {
+		background: url('../images/logo-snapsvg.svg');
+	}
+	&.logo-svg {
+		background: url('../images/logo-svg.svg');
+	}
+	&.logo-vue {
+		background: url('../images/logo-vue.svg');
+	}
+}

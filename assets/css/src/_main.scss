@@ -1,0 +1,29 @@
+main {
+	margin-top: 66px;
+	section {
+		position: absolute;
+		// top: 0;
+		width: 100%;
+		height: 100%;
+		margin-top: 10px;
+	}
+}
+
+main #fri-subjects {
+	left: 100%;
+	height: auto;
+	img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+main #showroom {
+	left: 200%;
+	height: auto;
+}
+main #animated-cv {
+	left: 300%;
+	height: auto;
+}
