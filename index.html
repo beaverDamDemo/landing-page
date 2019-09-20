@@ -1,0 +1,217 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <!-- META -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <title>Zdenko's landing page</title>
+      <style>
+        .preloader-wrapper {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2000;
+          background: linear-gradient(315deg, transparent 75%, darkolivegreen 0)-10px 0,
+            linear-gradient(45deg, transparent 75%, #416341 0)-10px 0,
+            linear-gradient(135deg, darkgreen 50%, transparent 0) 0 0,
+            linear-gradient(45deg, #333a27 50%, darkgreen 0) 0 0 darkgreen;
+            background-size: 20px 20px;
+          animation: preloader_hide_an 0.33s linear forwards;
+        }
+        .preloader-wrapper.active {
+          opacity: 1;
+          animation: none;
+        }
+        .preloader-wrapper .preloader-content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 240px;
+          text-align: center;
+        }
+        .trackbar {
+          margin-top: 50px;
+          width: inherit;
+          border: 1px solid black;
+          background-color: black;
+        }
+        .loadbar {
+          width: 0;
+          height: 8px;
+          background: linear-gradient(to right, #fff, #bfc 80%, #8f9);
+        }
+        @keyframes preloader_hide_an {
+          to {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      </style>
+      <link rel="stylesheet" href="assets/css/styles.min.css" />
+    </head>
+
+    <body class="loading">
+      <div class="preloader-wrapper active">
+        <div class="preloader-content">
+          <div class="preloader-wheel active">
+            <svg class="lds-gears" width="100px"  height="100px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="translate(50 50)"> <g transform="translate(-19 -19) scale(0.6)"> <g transform="rotate(90)">
+            <animateTransform attributeName="transform" type="rotate" values="0;360" keyTimes="0;1" dur="2s" begin="0s" repeatCount="indefinite"></animateTransform><path d="M37.3496987939662 -7 L47.3496987939662 -7 L47.3496987939662 7 L37.3496987939662 7 A38 38 0 0 1 31.359972760794346 21.46047782418268 L31.359972760794346 21.46047782418268 L38.431040572659825 28.531545636048154 L28.531545636048154 38.431040572659825 L21.46047782418268 31.359972760794346 A38 38 0 0 1 7.0000000000000036 37.3496987939662 L7.0000000000000036 37.3496987939662 L7.000000000000004 47.3496987939662 L-6.999999999999999 47.3496987939662 L-7 37.3496987939662 A38 38 0 0 1 -21.46047782418268 31.35997276079435 L-21.46047782418268 31.35997276079435 L-28.531545636048154 38.431040572659825 L-38.43104057265982 28.531545636048158 L-31.359972760794346 21.460477824182682 A38 38 0 0 1 -37.3496987939662 7.000000000000007 L-37.3496987939662 7.000000000000007 L-47.3496987939662 7.000000000000008 L-47.3496987939662 -6.9999999999999964 L-37.3496987939662 -6.999999999999997 A38 38 0 0 1 -31.35997276079435 -21.460477824182675 L-31.35997276079435 -21.460477824182675 L-38.431040572659825 -28.531545636048147 L-28.53154563604818 -38.4310405726598 L-21.4604778241827 -31.35997276079433 A38 38 0 0 1 -6.999999999999992 -37.3496987939662 L-6.999999999999992 -37.3496987939662 L-6.999999999999994 -47.3496987939662 L6.999999999999977 -47.3496987939662 L6.999999999999979 -37.3496987939662 A38 38 0 0 1 21.460477824182686 -31.359972760794342 L21.460477824182686 -31.359972760794342 L28.531545636048158 -38.43104057265982 L38.4310405726598 -28.53154563604818 L31.35997276079433 -21.4604778241827 A38 38 0 0 1 37.3496987939662 -6.999999999999995 M0 -23A23 23 0 1 0 0 23 A23 23 0 1 0 0 -23" fill="#9b8b69"></path></g></g> <g transform="translate(19 19) scale(0.6)"> <g transform="rotate(247.5)">
+            <animateTransform attributeName="transform" type="rotate" values="360;0" keyTimes="0;1" dur="2s" begin="-0.125s" repeatCount="indefinite"></animateTransform><path d="M37.3496987939662 -7 L47.3496987939662 -7 L47.3496987939662 7 L37.3496987939662 7 A38 38 0 0 1 31.359972760794346 21.46047782418268 L31.359972760794346 21.46047782418268 L38.431040572659825 28.531545636048154 L28.531545636048154 38.431040572659825 L21.46047782418268 31.359972760794346 A38 38 0 0 1 7.0000000000000036 37.3496987939662 L7.0000000000000036 37.3496987939662 L7.000000000000004 47.3496987939662 L-6.999999999999999 47.3496987939662 L-7 37.3496987939662 A38 38 0 0 1 -21.46047782418268 31.35997276079435 L-21.46047782418268 31.35997276079435 L-28.531545636048154 38.431040572659825 L-38.43104057265982 28.531545636048158 L-31.359972760794346 21.460477824182682 A38 38 0 0 1 -37.3496987939662 7.000000000000007 L-37.3496987939662 7.000000000000007 L-47.3496987939662 7.000000000000008 L-47.3496987939662 -6.9999999999999964 L-37.3496987939662 -6.999999999999997 A38 38 0 0 1 -31.35997276079435 -21.460477824182675 L-31.35997276079435 -21.460477824182675 L-38.431040572659825 -28.531545636048147 L-28.53154563604818 -38.4310405726598 L-21.4604778241827 -31.35997276079433 A38 38 0 0 1 -6.999999999999992 -37.3496987939662 L-6.999999999999992 -37.3496987939662 L-6.999999999999994 -47.3496987939662 L6.999999999999977 -47.3496987939662 L6.999999999999979 -37.3496987939662 A38 38 0 0 1 21.460477824182686 -31.359972760794342 L21.460477824182686 -31.359972760794342 L28.531545636048158 -38.43104057265982 L38.4310405726598 -28.53154563604818 L31.35997276079433 -21.4604778241827 A38 38 0 0 1 37.3496987939662 -6.999999999999995 M0 -23A23 23 0 1 0 0 23 A23 23 0 1 0 0 -23" fill="#a1a6a8"></path></g></g></g></svg>
+          </div>
+          <div class="trackbar">
+            <div class="loadbar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <header>
+          <a href="#" class="header__icon" id="header__icon"></a>
+          <nav class="menu">
+            <a id="a-link-0" data-section='section-skills' class="active" href="#">Skills</a>
+            <a id="a-link-1" data-section='fri-subjects' href="#">FRI subjects</a>
+            <a id="a-link-2" data-section='showroom' href="#">Showroom</a>
+            <a id="a-link-3" data-section='animated-cv' href="#">Animated CV</a>
+            <a id="a-link-4" data-section='' href='https://www.linkedin.com/in/zdenko-vuk/'>Linked</a>
+          </nav>
+        </header>
+        <main>
+          <section id="section-skills">
+            <div class="wrapper"></div>
+          </section>
+          <section id="fri-subjects">
+            <img src="https://fri.uni-lj.si/upload/Slike/predmetniki/2020_RIN_VSS.png" alt="">
+          </section>
+          <section id="showroom">
+              <a href='https://beaverdamdemo.github.io/my-cv/'>my-cv
+                <p>comment: currently not mobile-friendly</p>
+                <p>start of production: 2018</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-snapsvg"></div>
+                  <div class="logo logo-svg"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/magnifier-ani/'>magnifier-ani
+                <p>comment: animation done with Adobe flash professional</p>
+                <p>start of production: 2019</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-svg"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/hisa-refoska/'>hisa-refoska
+                <p>comment: test site</p>
+                <p>start of production: 2019</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-vue"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/form-101-vue/'>form-101-vue
+                <p>comment: test form input</p>
+                <p>start of production: 2018</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-vue"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/password-recovery-form-dist/'>password-recovery-form-dist
+                <p>comment: test form </p>
+                <p>start of production: 2018</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-vue"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/multiple-audio-files'>multiple-audio-file
+                <p>comment: </p>
+                <p>start of production: 2018</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/pobarvanka-z-racuni'>pobarvanka-z-racun
+                <p>comment: outdated</p>
+                <p>start of production: 2017</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-snapsvg"></div>
+                  <div class="logo logo-svg"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/piatnik-turbos'>piatnik-turbo
+                <p>comment: outdated</p>
+                <p>start of production: 2016</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/aquarium-filling'>aquarium-filling
+                <p>comment: outdated</p>
+                <p>start of production: 2016</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                </div>
+              </a>
+              <a href='https://beaverdamdemo.github.io/lesson-00'>magnetki drag and drop
+                <p>comment: outdated</p>
+                <p>start of production: 2016</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                </div>
+              </a>
+              <a href=''>straight line acceleration calc tool
+                <p>comment: coming soon</p>
+                <p>start of production: 2019</p>
+                <div>
+                  <div class="logo logo-html5"></div>
+                  <div class="logo logo-css3"></div>
+                  <div class="logo logo-es6"></div>
+                  <div class="logo logo-vue"></div>
+                </div>
+              </a>
+          </section>
+          <section id="animated-cv">
+            <iframe src="https://beaverdamdemo.github.io/my-cv/" width='1024' height='1468' frameborder="0"></iframe>
+          </section>
+          <section id="linkedin">
+          </section>
+        </main>
+        <footer></footer>
+      </div>
+
+      <article style='position:absolute; top: 150px;left:550px; width:400px; height: 30px;background: white; font-size: 2rem;'><p>still under construction</p></article>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+      <!-- <script src="assets/js/src/init.js"></script> -->
+      <!-- <script src="assets/js/src/play.js"></script> -->
+      <!-- <script src="assets/js/src/bundle.js"></script> -->
+
+      <script src="assets/js/bundle-dist.js"></script>
+    </body>
+  </html>
