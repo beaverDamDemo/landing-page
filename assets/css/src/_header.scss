@@ -7,6 +7,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   height: 66px;
   line-height: 66px;
   color: #fff;
@@ -68,56 +69,79 @@ header {
 @media only screen and (max-width: 768px) {
   header {
     position: static;
+    height: auto;
+    line-height: 110%;
   }
 
   .header__icon {
-    position: relative;
-    display: block;
-    float: left;
-    width: 50px;
-    height: 66px;
-    cursor: pointer;
+    // position: relative;
+    // display: block;
+    // float: left;
+    // width: 50px;
+    // height: 66px;
+    // cursor: pointer;
 
     &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 1rem;
-      height: 0;
-      top: 16px;
-      left: 15px;
-      box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+      // content: '';
+      // position: absolute;
+      // display: block;
+      // width: 1rem;
+      // height: 0;
+      // top: 16px;
+      // left: 15px;
+      // box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
     }
   }
 
   .menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    float: none;
+    padding: 0;
+    position: static;
+    display: block;
     background-color: #333;
-    width: 256px;
-    transform: translateX(-256px);
+    transform: none;
     a {
       display: block;
       height: 40px;
       text-align: center;
       line-height: 40px;
       border-bottom: 1px solid #444;
+      padding: 0;
+      &.active {
+        border: 1px solid #444;
+        box-sizing: content-box;
+        &:before {
+          display: none;
+        }
+      }
+      &:last-child {
+        position: relative;
+      }
+      &:last-child:after {
+        content: '';
+        width: 30px;
+        height: 32px;
+        position: absolute;
+        top: 4px;
+        background-image: url('../images/Logo-2CRev-75px-R.png');
+        background-size: 75px auto;
+        background-repeat: no-repeat;
+        background-position: -53px 7px;
+      }
     }
   }
 
-  .with--sidebar {
-    .site-pusher {
-      transform: translateX(256px);
-    }
-    .site-cache {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.6);
-    }
-  }
+  // .with--sidebar {
+  //   .site-pusher {
+  //     transform: translateX(256px);
+  //   }
+  //   .site-cache {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     background-color: rgba(0,0,0,0.6);
+  //   }
+  // }
 }

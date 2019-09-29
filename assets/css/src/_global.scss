@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto Slab', serif;
   line-height: 166%;
   background: url('../images/bg-hi.jpg') center top / cover repeat;
+  overflow: hidden;
 }
 @media screen and (max-width: 1919px) {
 	body {
@@ -27,5 +28,4 @@ body {
 #container {
 	width: 100%;
 	margin: auto;
-	border: 1px solid white;
 }
