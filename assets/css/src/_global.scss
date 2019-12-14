@@ -29,3 +29,20 @@ body {
 	width: 100%;
 	margin: auto;
 }
+#underConstruction {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+	display: inline-block;
+	background: #fff;
+	padding: 1.5rem;
+	opacity: 0;
+	animation: underConstruction_ani 10s infinite;
+}
+@keyframes underConstruction_ani {
+	35%, 50% {
+		opacity: 0.75;
+	}
+}
