@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext');
-// @font-face {
-// 	font-family: 'tannenberg_fettregular';
-// 	src: url('../fonts/tannenbergfett-webfont.woff'), url('../fonts/tannenbergfett-webfont.woff2');
-// }
 
 * {
 	margin: 0;
@@ -25,10 +21,6 @@ body {
 	}
 }
 
-#container {
-	width: 100%;
-	margin: auto;
-}
 #underConstruction {
 	position: absolute;
 	top: 50%;

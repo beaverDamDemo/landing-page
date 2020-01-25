@@ -1,9 +1,4 @@
 section#section-skills {
-	padding: 0px 0px;
-	// width: 688px;
-	width: 100%;
-	margin: 10px auto 0 auto;
-	height: auto;
 
 	& .wrapper {
 		position: absolute;
@@ -59,30 +54,31 @@ section#section-skills {
 			}
 		}
 	}
+}
 
 	@media screen and (max-width: 768px) {
-		width: 90%;
-		background: red;
+	// 	width: 100%;
+	// 	background: red;
 
-		.skill-wrapper {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			width: inherit;
-			height: 6rem;
-			// margin-bottom: 3px;
-			position: relative;
-		}
-		.skill-wrapper .skill.skill__label {
-			width: 100%;
-			background: gold;
-		}
-		.skill__value {
+	// 	.skill-wrapper {
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		flex-wrap: wrap;
+	// 		width: inherit;
+	// 		height: 6rem;
+	// 		// margin-bottom: 3px;
+	// 		position: relative;
+	// 	}
+	// 	.skill-wrapper .skill.skill__label {
+	// 		width: 100%;
+	// 		background: gold;
+	// 	}
+	// 	.skill__value {
 
-		}
-		.skill-wrapper .skill.skill__bar {
-			display: block;
-			background: dodgerblue;
-		}
-	}
+	// 	}
+	// 	.skill-wrapper .skill.skill__bar {
+	// 		display: block;
+	// 		background: dodgerblue;
+	// 	}
+	// }
 }

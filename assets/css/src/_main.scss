@@ -1,30 +1,48 @@
+#container {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
 main {
 	margin-top: 66px;
+	width: 500%;
+	border: 2px dashed black;
+	min-height: 478px;
+
 	section {
 		position: absolute;
-		// top: 0;
 		width: 100%;
 		height: 100%;
-		margin-top: 10px;
+		overflow: scroll;
 	}
+}
+
+main #section-skills {
+
 }
 
 main #fri-subjects {
 	left: 100%;
-	height: auto;
-	overflow: hidden;
 	img {
 		position: absolute;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
+		width: 600px;
+		left: 5%;
+		top: 60px;
 	}
 }
+
 main #showroom {
 	left: 200%;
-	height: auto;
+	background: yellow;
 }
+
 main #animated-cv {
 	left: 300%;
-	height: auto;
+	background: yellowgreen;
+}
+
+main #linkedin {
+	left: 400%;
+	background: forestgreen;
 }
