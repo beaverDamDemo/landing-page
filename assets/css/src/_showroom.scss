@@ -1,17 +1,33 @@
 main section#showroom {
+	overflow: auto;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		height: 1400px;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
 
 	a {
-		float: left;
+		margin-top: 10px;
+		margin-bottom: 0px;
 		width: 240px;
-		height: 240px;
+		height: 320px;
+		max-height: 320px;
 		border: 1px solid #202b59;
-		background: dodgerblue;
-		padding: 0;
-		margin:10px;
 		background-color: rgba(238,238,238,0.8);
 		background-image: url('http://placekitten.com/240/160');
-		background-size: 60% 60%;
+		background-size: 80% auto;
 		background-position: 50% 90%;
 		background-repeat: no-repeat;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: background 0.6s 0.4s;
+		&:hover {
+			background-color: #fff;
+			transition: background 0.7s;
+		}
 	}
 }

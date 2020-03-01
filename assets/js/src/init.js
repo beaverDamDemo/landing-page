@@ -35,7 +35,7 @@
         appendString += "<div class='skill-wrapper'>"
         appendString += "<div class='skill skill__label'>"+json.skills[i].label+"</div>"
         appendString += "<div class='skill skill__value'>"+json.skills[i].value+"</div>"
-        appendString += "<div class='skill skill__bar' style='max-width: "+(100*json.skills[i].value)+"%'>"
+        appendString += "<div class='skill skill__bar' style='max-width: "+(42*json.skills[i].value)+"%'>"
         appendString += "<div class='inner'></div></div>"
         appendString += "</div>"
         $('section#section-skills .wrapper').append(appendString)
@@ -71,7 +71,7 @@
     let diff = Math.abs(currentStep - parseInt($(this).attr('id').split('-')[2]))
     currentStep = parseInt($(this).attr('id').split('-')[2])
     $('main').css({
-      'transform': 'translateX(-'+(parseInt($(this).attr('id').split('-')[2])*100)+'%)',
+      'transform': 'translateX(-'+(parseInt($(this).attr('id').split('-')[2])*20)+'%)',
       'transition': 'transform '+diff*0.8+'s'
     })
   })

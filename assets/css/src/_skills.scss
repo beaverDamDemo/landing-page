@@ -1,13 +1,14 @@
 section#section-skills {
-
+	overflow: auto;
 	& .wrapper {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: 0;
+		top: 8px;
 		width: 688px;
 		margin: 0 auto;
 		background: rgba(50, 50, 50, 0.55);
+		padding-bottom: 75px;
 	}
 
 	& .skill-wrapper {
@@ -24,7 +25,8 @@ section#section-skills {
 			font-size: 1.33rem;
 			line-height: 166%;
 			&.skill__label {
-				width: 336px;
+				width: 327px;
+				padding-left: 9px;
 			}
 			&.skill__value {
 				width: 64px;
