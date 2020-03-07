@@ -2,7 +2,7 @@
 	"skills": [
 		{
 			"label": "html, css, js, JQuery",
-			"value": 0.9
+			"value": 0.95
 		},
 		{
 			"label": "Greensock animation",
@@ -26,11 +26,11 @@
 		},
 		{
 			"label": "Vuejs",
-			"value": 0.15
+			"value": 0.2
 		},
 		{
 			"label": "responsive design",
-			"value": 0.75
+			"value": 0.85
 		},
 		{
 			"label": "C#",
