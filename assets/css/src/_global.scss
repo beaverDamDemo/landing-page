@@ -8,7 +8,8 @@ body {
   font-family: 'Roboto Slab', serif;
   line-height: 166%;
   background: url('../images/bg-hi.jpg') center top / cover repeat;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 1919px) {
 	body {
