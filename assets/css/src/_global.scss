@@ -24,15 +24,17 @@ body {
 
 #underConstruction {
 	position: absolute;
-	top: 50%;
+	top: 200px;
 	left: 50%;
+	width: 320px;
 	transform: translate(-50%, -50%);
 	font-size: 2rem;
-	display: inline-block;
-	background: #fff;
-	padding: 1.5rem;
-	opacity: 0;
+	background: #ff07;
+	padding: 1rem;
+	opacity: 0.1;
 	animation: underConstruction_ani 10s infinite;
+	text-align: center;
+	line-height: 125%;
 }
 @keyframes underConstruction_ani {
 	35%, 50% {

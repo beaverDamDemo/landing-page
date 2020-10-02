@@ -18,15 +18,23 @@
 		},
 		{
 			"label": "Adobe Flash Professional",
-			"value": 0.6
+			"value": 0.5
 		},
 		{
 			"label": "Github",
-			"value": 0.6
+			"value": 0.65
 		},
 		{
 			"label": "Vuejs",
-			"value": 0.2
+			"value": 0.3
+		},
+		{
+			"label": "Nuxtjs",
+			"value": 0.3
+		},
+		{
+			"label": "Vuetify",
+			"value": 0.3
 		},
 		{
 			"label": "responsive design",
@@ -34,7 +42,7 @@
 		},
 		{
 			"label": "C#",
-			"value": 0.1
+			"value": 0.15
 		},
 		{
 			"label": "C/C++",
@@ -50,7 +58,7 @@
 		},
 		{
 			"label": "cars chiptuning",
-			"value": 0.5
+			"value": 0.4
 		},
 		{
 			"label": "Java",
