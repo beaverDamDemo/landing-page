@@ -56,26 +56,54 @@ section#section-skills {
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  section#section-skills {
+    overflow: auto;
+	height: 100%;
+    .wrapper {
+      position: static;
+      padding: 0;
+      width: 100%;
 
-// @media screen and (max-width: 768px) {
-//   .wrapper {
-//     width: 100%;
-//     background: red;
-//   }
-//   .skill-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     width: inherit;
-//     height: 6rem;
-//     position: relative;
-//   }
-//   .skill-wrapper .skill.skill__label {
-//     width: 100%;
-//     background: gold;
-//   }
-//   .skill-wrapper .skill.skill__bar {
-//     display: block;
-//     background: dodgerblue;
-//   }
-// }
+      .skill-wrapper {
+        // background: violet;
+        margin-bottom: 30px;
+        position: relative;
+        & .skill {
+          font-size: 1rem;
+
+          &.skill__label {
+            width: calc(100% - 52px);
+            padding-left: 0px;
+          }
+          &.skill__value {
+            width: 42px;
+          }
+          &.skill__bar {
+            height: 1.5rem;
+            position: absolute;
+            width: inherit;
+            left: 0px;
+            top: 30px;
+
+            & .inner {
+              //   background: linear-gradient(to right, #ffd900 2px, rgb(255, 1, 1) 4px, rgb(98, 0, 255));
+              width: 100%;
+            }
+            // &::before {
+            //   content: "";
+            //   width: 100%;
+            //   border: 1px solid darkgray;
+            //   border: 2px solid red;
+            //   height: 1.5rem;
+            //   position: absolute;
+            //   left: 0;
+            //   top: -1px;
+            //   z-index: 0;
+            // }
+          }
+        }
+      }
+    }
+  }
+}

@@ -52,24 +52,37 @@ main section .wrapper {
 main #fri-subjects {
   left: 20%;
 }
-main #fri-subjects div {
-  background: #fff;
-  padding: 1rem 2rem;
-  margin-top: 30px;
-}
+
 main #fri-subjects h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
+main #fri-subjects {
+  left: 20%;
+  div {
+    background: #fff;
+    padding: 1rem 2rem;
+    margin-top: 30px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 main #showroom {
   left: 40%;
 }
+
 main #animated-cv {
   left: 60%;
 }
+
 main #linkedin {
   left: 80%;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -295,26 +308,32 @@ main section#showroom a img {
   width: 220px;
   height: auto;
 }
-/*# sourceMappingURL=styles.css.map */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Roboto Slab", serif;
-  line-height: 166%;
-  background: url("../images/bg-hi.jpg") center top / cover repeat;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-@media screen and (max-width: 1919px) {
-  body {
-    background: url("../images/bg-md.jpg") center top / cover repeat;
-  }
-}
 @media screen and (max-width: 1024px) {
-  body {
-    background: url("../images/bg-lo.jpg") center top / cover repeat;
+  #container {
+    position: static;
+    left: unset;
+    right: unset;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    min-height: 500px;
+    background: black;
   }
+  main {
+    margin-top: 5px;
+  }
+  // main section {
+  //   position: absolute;
+  //   width: 20%;
+  //   min-height: 100%;
+  // }
+  // main section .wrapper {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: calc(100%);
+  //   min-height: 500px;
+  //   background: rgba(50, 50, 50, 0.55);
+  // }
 }
