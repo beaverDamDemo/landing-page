@@ -74,45 +74,61 @@ section#section-skills {
     height: 100%;
     .wrapper {
       position: static;
-      padding: 0;
       width: 100%;
-
+      margin: 0 0;
+      padding: 0 0;
       .skill-wrapper {
-        // background: violet;
         margin-bottom: 30px;
         position: relative;
+        width: calc(100% - 10px);
+        margin: 0 5px;
         & .skill {
+          color: #fff;
           font-size: 1rem;
-
+          line-height: 166%;
           &.skill__label {
-            width: calc(100% - 52px);
-            padding-left: 0px;
+            width: calc(100% - 64px);
+            position: absolute;
+            left: 0;
           }
           &.skill__value {
-            width: 42px;
+            width: 64px;
+            font-style: italic;
+            text-align: right;
+            position: absolute;
+            left: unset;
+            right: 0;
           }
           &.skill__bar {
-            height: 1.5rem;
+            opacity: 0.75;
+            width: 297px;
+            height: 2.25rem;
+            overflow: hidden;
             position: absolute;
-            width: inherit;
-            left: 0px;
-            top: 30px;
-
-            & .skill__bar__fixed {
-              //   background: linear-gradient(to right, #ffd900 2px, rgb(255, 1, 1) 4px, rgb(98, 0, 255));
-              width: 100%;
+            left: 390px;
+            display: none;
+            .skill__bar__background {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 297px;
+              height: 100%;
+              z-index: 1;
             }
-            // &::before {
-            //   content: "";
-            //   width: 100%;
-            //   border: 1px solid darkgray;
-            //   border: 2px solid red;
-            //   height: 1.5rem;
-            //   position: absolute;
-            //   left: 0;
-            //   top: -1px;
-            //   z-index: 0;
-            // }
+            .skill__bar__fixed {
+              position: absolute;
+              left: 0;
+              width: 297px;
+              background: linear-gradient(to right, #ffe5c7, #0a0);
+              height: inherit;
+            }
+            .skill__bar__dynamic {
+              position: absolute;
+              right: 0;
+              width: 297px;
+              background: rgb(39, 39, 39);
+              height: inherit;
+            }
           }
         }
       }
