@@ -42,11 +42,10 @@
         "<div class='skill skill__value'>" + json.skills[i].value + "</div>";
       appendString += "<div class='skill skill__bar'>";
       appendString += "<div class='skill__bar__background'>";
+      appendString += "<div class='skill__bar__fixed' >";
       appendString +=
-        "<div class='skill__bar__fixed' >";
-        appendString +=
         "<div class='skill__bar__dynamic' style='max-width: " +
-        (100 * (1 - json.skills[i].value)) +
+        100 * (1 - json.skills[i].value) +
         "%'></div></div></div>";
       appendString += "</div></div>";
       $("section#section-skills .wrapper").append(appendString);
