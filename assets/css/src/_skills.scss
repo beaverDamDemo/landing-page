@@ -81,7 +81,7 @@ section#section-skills {
         margin-bottom: 30px;
         position: relative;
         width: calc(100% - 10px);
-        margin: 0 5px;
+        margin: 0 5px 30px 5px;
         & .skill {
           color: #fff;
           font-size: 1rem;
@@ -102,11 +102,13 @@ section#section-skills {
           &.skill__bar {
             opacity: 0.75;
             width: 297px;
-            height: 2.25rem;
+            height: 1.25rem;
             overflow: hidden;
             position: absolute;
-            left: 390px;
-            display: none;
+            left: 0;
+            top: 30px;
+            background: yellow;
+
             .skill__bar__background {
               position: absolute;
               left: 0px;
