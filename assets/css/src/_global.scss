@@ -190,62 +190,7 @@ header {
     background-position: -53px 7px;
   }
 }
-section#section-skills {
-  overflow: auto;
-}
-section#section-skills .wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 8px;
-  width: 688px;
-  margin: 0 auto;
-  background: rgba(50, 50, 50, 0.55);
-  padding: 20px 20px;
-}
-section#section-skills .skill-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: inherit;
-  height: 3rem;
-  margin-bottom: 3px;
-  position: relative;
-}
-section#section-skills .skill-wrapper .skill {
-  color: #fff;
-  font-size: 1.33rem;
-  line-height: 166%;
-}
-section#section-skills .skill-wrapper .skill.skill__label {
-  width: 327px;
-  padding-left: 9px;
-}
-section#section-skills .skill-wrapper .skill.skill__value {
-  width: 64px;
-  font-style: italic;
-}
-section#section-skills .skill-wrapper .skill.skill__bar {
-  opacity: 0.75;
-  width: 288px;
-  height: 2.25rem;
-  overflow: hidden;
-}
-section#section-skills .skill-wrapper .skill.skill__bar .inner {
-  background: linear-gradient(to right, #445, #1e90ff);
-  width: 288px;
-  height: inherit;
-}
-section#section-skills .skill-wrapper .skill:before {
-  content: "";
-  width: 288px;
-  border: 1px solid darkgray;
-  height: 2.25rem;
-  position: absolute;
-  left: 399px;
-  top: -1px;
-  z-index: -1;
-}
+
 .logo {
   width: 24px;
   height: 24px;
