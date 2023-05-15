@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  let currentStep = 0
+  var currentStep = 0
   $('body').removeClass('loading')
 
   /* preloader */
@@ -17,7 +17,7 @@
   }, time)
 
   function preloaderTimeout() {
-    let dfd = $.Deferred();
+    var dfd = $.Deferred();
     console.warn("temporary")
     setTimeout(()=>{
       dfd.resolve('preloader timeout passed')
@@ -30,8 +30,8 @@
       console.log(json); // this will show the info it in firebug console
       $('.preloader-wrapper').removeClass('active');
 
-      for( let i=0; i<json.skills.length; i++ ) {
-        let appendString = '';
+      for( var i=0; i<json.skills.length; i++ ) {
+        var appendString = '';
         appendString += "<div class='skill-wrapper'>"
         appendString += "<div class='skill skill__label'>"+json.skills[i].label+"</div>"
         appendString += "<div class='skill skill__value'>"+json.skills[i].value+"</div>"
@@ -68,7 +68,7 @@
   });
 
   $("nav a").on('click', function(e) {
-    let diff = Math.abs(currentStep - parseInt($(this).attr('id').split('-')[2]))
+    var diff = Math.abs(currentStep - parseInt($(this).attr('id').split('-')[2]))
     currentStep = parseInt($(this).attr('id').split('-')[2])
     $('main').css({
       'transform': 'translateX(-'+(parseInt($(this).attr('id').split('-')[2])*20)+'%)',
