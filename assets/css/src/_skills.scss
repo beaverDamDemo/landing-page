@@ -45,21 +45,21 @@ section#section-skills {
             position: absolute;
             left: 0px;
             top: 0px;
-            width: 297px;
+            width: 100%;
             height: 100%;
             z-index: 1;
           }
           .skill__bar__fixed {
             position: absolute;
             left: 0;
-            width: 297px;
+            width: 100%;
             background: linear-gradient(to right, #ffe5c7, #0a0);
             height: inherit;
           }
           .skill__bar__dynamic {
             position: absolute;
             right: 0;
-            width: 297px;
+            width: 100%;
             background: rgb(39, 39, 39);
             height: inherit;
           }
@@ -80,8 +80,8 @@ section#section-skills {
       .skill-wrapper {
         margin-bottom: 30px;
         position: relative;
-        width: calc(100% - 10px);
-        margin: 0 5px 30px 5px;
+        width: calc(100% - 20px);
+        margin: 0 10px 30px 10px;
         & .skill {
           color: #fff;
           font-size: 1rem;
@@ -101,7 +101,7 @@ section#section-skills {
           }
           &.skill__bar {
             opacity: 0.75;
-            width: 297px;
+            width: 100%;
             height: 1.25rem;
             overflow: hidden;
             position: absolute;
@@ -113,21 +113,18 @@ section#section-skills {
               position: absolute;
               left: 0px;
               top: 0px;
-              width: 297px;
               height: 100%;
               z-index: 1;
             }
             .skill__bar__fixed {
               position: absolute;
               left: 0;
-              width: 297px;
               background: linear-gradient(to right, #ffe5c7, #0a0);
               height: inherit;
             }
             .skill__bar__dynamic {
               position: absolute;
               right: 0;
-              width: 297px;
               background: rgb(39, 39, 39);
               height: inherit;
             }
