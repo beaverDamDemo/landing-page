@@ -43,15 +43,6 @@
     }
   });
 
-  $("main section#section-skills").css("height", "830px");
-  $("main section#section-skills").css("overflow", "hidden");
-  $("main section#fri-subjects").css("height", "478px");
-  $("main section#fri-subjects").css("overflow", "hidden");
-  $("main section#showroom").css("height", "478px");
-  $("main section#showroom").css("overflow", "hidden");
-  $("main section#animated-cv").css("height", "478px");
-  $("main section#animated-cv").css("overflow", "hidden");
-
   $("#header__icon").click(function (e) {
     e.preventDefault();
     $("body").toggleClass("with--sidebar");
@@ -89,44 +80,23 @@
   });
 
   $("#a-link-0").on("click", function () {
-    $("main section#section-skills").css("height", "830px");
-    $("main section#section-skills").css("overflow", "hidden");
-    $("main section#fri-subjects").css("height", "478px");
-    $("main section#fri-subjects").css("overflow", "hidden");
-    $("main section#showroom").css("height", "478px");
-    $("main section#showroom").css("overflow", "hidden");
-    $("main section#animated-cv").css("height", "478px");
-    $("main section#animated-cv").css("overflow", "hidden");
+    $("main section").removeClass("active");
+    $("#container").removeClass("scrollable");
+    $("main section#section-skills").addClass("active");
   });
   $("#a-link-1").on("click", function () {
-    $("main section#section-skills").css("height", "478px");
-    $("main section#section-skills").css("overflow", "hidden");
-    $("main section#fri-subjects").css("height", "996px");
-    $("main section#fri-subjects").css("overflow", "hidden");
-    $("main section#showroom").css("height", "478px");
-    $("main section#showroom").css("overflow", "hidden");
-    $("main section#animated-cv").css("height", "478px");
-    $("main section#animated-cv").css("overflow", "hidden");
+    $("main section").removeClass("active");
+    $("#container").removeClass("scrollable");
+    $("main section#fri-subjects").addClass("active");
   });
   $("#a-link-2").on("click", function () {
-    $("main section#section-skills").css("height", "478px");
-    $("main section#section-skills").css("overflow", "hidden");
-    $("main section#fri-subjects").css("height", "478px");
-    $("main section#fri-subjects").css("overflow", "hidden");
-    $("main section#showroom").css("height", "3680px");
-    $("main section#showroom").css("overflow", "hidden");
-    $("main section#animated-cv").css("height", "478px");
-    $("main section#animated-cv").css("overflow", "hidden");
+    $("main section").removeClass("active");
+    $("#container").removeClass("scrollable");
+    $("main section#showroom").addClass("active");
   });
   $("#a-link-3").on("click", function () {
-    $("main section#section-skills").css("height", "478px");
-    $("main section#section-skills").css("overflow", "hidden");
-    $("main section#fri-subjects").css("height", "478px");
-    $("main section#fri-subjects").css("overflow", "hidden");
-    $("main section#showroom").css("height", "478px");
-    $("main section#showroom").css("overflow", "hidden");
-    $("main section#animated-cv").css("height", "1427px");
-    $("main section#animated-cv").css("overflow", "hidden");
+    $("main section").removeClass("active");
+    $("#container").addClass("scrollable");
+    $("main section#animated-cv").addClass("active");
   });
-  $("#a-link-4").on("click", function () {});
 })();
