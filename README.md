@@ -1,6 +1,6 @@
 # to run with Koala
 
-non-free Prepros has been replaced by free Koala.
+non-free Prepros has been replaced by free Koala. Koala not in use anymore.
 download Koala from here: http://koala-app.com/
 
 # Koala set up
@@ -9,12 +9,6 @@ assets/js/src/init.js goes translated into assets/js/init.min.js
 Remember to check Harmony(ES6+)
 
 assets/css/src/styles.scss goes translated into assets/css/styles.min.css
-
-# Without Koala
-
-npm install -g sass
-go to css directory
-sass --style=compressed src:css
 
 # To run
 
