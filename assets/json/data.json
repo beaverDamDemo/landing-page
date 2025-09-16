@@ -21,6 +21,10 @@
       "value": 0.45
     },
     {
+      "label": "ASP.NET Core (C#)",
+      "value": 0.45
+    },
+    {
       "label": "NestJS",
       "value": 0.4
     },
