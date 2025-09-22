@@ -1,23 +1,23 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext';
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext";
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   line-height: 166%;
-  background: url('../images/bg-hi.jpg') center top/cover repeat;
+  background: url("../images/bg-hi.jpg") center top/cover repeat;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 @media screen and (max-width: 1919px) {
   body {
-    background: url('../images/bg-md.jpg') center top/cover repeat;
+    background: url("../images/bg-md.jpg") center top/cover repeat;
   }
 }
 @media screen and (max-width: 1024px) {
   body {
-    background: url('../images/bg-lo.jpg') center top/cover repeat;
+    background: url("../images/bg-lo.jpg") center top/cover repeat;
   }
 }
 #container {
@@ -115,7 +115,7 @@ header {
   color: navy;
 }
 .menu a.active:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0px;
   height: 10px;
@@ -131,12 +131,12 @@ header {
   filter: brightness(0.9);
 }
 .menu a:last-child:after {
-  content: '';
+  content: "";
   width: 30px;
   height: 32px;
   position: absolute;
   top: 16px;
-  background-image: url('../images/Logo-2CRev-75px-R.png');
+  background-image: url("../images/Logo-2CRev-75px-R.png");
   background-size: 75px auto;
   background-repeat: no-repeat;
   background-position: -53px 7px;
@@ -177,12 +177,12 @@ header {
     position: relative;
   }
   .menu a:last-child:after {
-    content: '';
+    content: "";
     width: 30px;
     height: 32px;
     position: absolute;
     top: 4px;
-    background-image: url('../images/Logo-2CRev-75px-R.png');
+    background-image: url("../images/Logo-2CRev-75px-R.png");
     background-size: 75px auto;
     background-repeat: no-repeat;
     background-position: -53px 7px;
@@ -199,22 +199,32 @@ header {
   background-size: 24px auto;
 }
 .logo.logo-css3 {
-  background: url('../images/logo-css3.svg');
+  background: url("../images/logo-css3.svg");
 }
 .logo.logo-es6 {
-  background: url('../images/logo-es6.svg');
+  background: url("../images/logo-es6.svg");
 }
 .logo.logo-html5 {
-  background: url('../images/logo-html5.svg');
+  background: url("../images/logo-html5.svg");
 }
 .logo.logo-snapsvg {
-  background: url('../images/logo-snapsvg.svg');
+  background: url("../images/logo-snapsvg.svg");
 }
 .logo.logo-svg {
-  background: url('../images/logo-svg.svg');
+  background: url("../images/logo-svg.svg");
 }
 .logo.logo-vue {
-  background: url('../images/logo-vue.svg');
+  background: url("../images/logo-vue.svg");
+}
+.logo.logo-aiven {
+  background: url("../images/logo-aiven.svg");
+  height: 19px;
+}
+.logo.logo-asp-net {
+  background: url("../images/logo-asp-net.svg");
+}
+.logo.logo-angular {
+  background: url("../images/logo-angular.svg");
 }
 main section#showroom {
   overflow: auto;
@@ -298,7 +308,7 @@ header {
   color: navy;
 }
 .menu a.active:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0px;
   height: 10px;
@@ -314,12 +324,12 @@ header {
   filter: brightness(0.9);
 }
 .menu a:last-child:after {
-  content: '';
+  content: "";
   width: 30px;
   height: 32px;
   position: absolute;
   top: 16px;
-  background-image: url('../images/Logo-2CRev-75px-R.png');
+  background-image: url("../images/Logo-2CRev-75px-R.png");
   background-size: 75px auto;
   background-repeat: no-repeat;
   background-position: -53px 7px;
@@ -360,12 +370,12 @@ header {
     position: relative;
   }
   .menu a:last-child:after {
-    content: '';
+    content: "";
     width: 30px;
     height: 32px;
     position: absolute;
     top: 4px;
-    background-image: url('../images/Logo-2CRev-75px-R.png');
+    background-image: url("../images/Logo-2CRev-75px-R.png");
     background-size: 75px auto;
     background-repeat: no-repeat;
     background-position: -53px 7px;
@@ -537,22 +547,22 @@ section#section-skills
   background-size: 24px auto;
 }
 .logo.logo-css3 {
-  background: url('../images/logo-css3.svg');
+  background: url("../images/logo-css3.svg");
 }
 .logo.logo-es6 {
-  background: url('../images/logo-es6.svg');
+  background: url("../images/logo-es6.svg");
 }
 .logo.logo-html5 {
-  background: url('../images/logo-html5.svg');
+  background: url("../images/logo-html5.svg");
 }
 .logo.logo-snapsvg {
-  background: url('../images/logo-snapsvg.svg');
+  background: url("../images/logo-snapsvg.svg");
 }
 .logo.logo-svg {
-  background: url('../images/logo-svg.svg');
+  background: url("../images/logo-svg.svg");
 }
 .logo.logo-vue {
-  background: url('../images/logo-vue.svg');
+  background: url("../images/logo-vue.svg");
 }
 main section#showroom {
   overflow: auto;
