@@ -6,7 +6,7 @@
     },
     {
       "label": "jQuery",
-      "value": 0.6
+      "value": 0.55
     },
     {
       "label": "Greensock animation",
@@ -25,12 +25,12 @@
       "value": 0.45
     },
     {
-      "label": "NestJS",
+      "label": "SQL",
       "value": 0.4
     },
     {
-      "label": "SQL statements (generic)",
-      "value": 0.4
+      "label": "NestJS",
+      "value": 0.35
     },
     {
       "label": "Adobe graphic tools",
@@ -41,7 +41,7 @@
       "value": 0.15
     },
     {
-      "label": "Adobe Flash Professional",
+      "label": "Adobe Animate CC",
       "value": 0.1
     }
   ]
