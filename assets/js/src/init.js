@@ -93,6 +93,13 @@
       $("main section").removeClass("active");
       $("#container").toggleClass("scrollable", sectionId === "animated-cv");
       $(`main section#${sectionId}`).addClass("active");
+      if (linkId === "#a-link-3") {
+        const iframe = document.querySelector("iframe");
+        iframe.contentWindow.postMessage(
+          { type: "restart" },
+          "https://beaverdamdemo.github.io"
+        );
+      }
     });
   });
 })();
