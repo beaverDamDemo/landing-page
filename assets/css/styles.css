@@ -218,6 +218,15 @@ header {
 .logo-angular {
   background-image: url("../images/logo-angular.svg");
 }
+.logo-fastapi {
+  background-image: url("../images/tinified/fastapi.png");
+}
+.logo-jinja2 {
+  background-image: url("../images/tinified/jinja2.png");
+}
+.logo-docker {
+  background-image: url("../images/tinified/docker-mark-blue.png");
+}
 
 main section#showroom {
   overflow: auto;
