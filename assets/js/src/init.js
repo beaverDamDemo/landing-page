@@ -88,40 +88,33 @@
       transform: `translateX(-${step * 16.66}%)`,
       transition: `transform ${diff * 0.8}s`,
     });
-  });
 
-  const sectionMap = {
-    "#a-link-0": "section-hi",
-    "#a-link-1": "section-skills",
-    "#a-link-2": "section-fri-subjects",
-    "#a-link-3": "section-showroom",
-    "#a-link-4": "section-animated-cv",
-  };
+    const sectionId = sectionMap[`#a-link-${step}`];
 
-  Object.entries(sectionMap).forEach(([linkId, sectionId]) => {
-    $(linkId).on("click", () => {
-      $("main section").removeClass("active");
-      $("#container").toggleClass(
-        "scrollable",
-        sectionId === "section-animated-cv"
-      );
-      $(`main section#${sectionId}`).addClass("active");
+    $("main section").removeClass("active");
+    $("#container").toggleClass(
+      "scrollable",
+      sectionId === "section-animated-cv"
+    );
+    $(`main section#${sectionId}`).addClass("active");
 
-      if (sectionId === "section-hi") {
+    if (sectionId === "section-hi") {
+      const delay = diff * 800;
+      setTimeout(() => {
         restartAnimation("#section-hi h1");
         restartAnimation("#section-hi h2");
         restartAnimation("#section-hi p:nth-of-type(1)");
         restartAnimation("#section-hi p:nth-of-type(2)");
         restartAnimation("#section-hi p:nth-of-type(3)");
-      }
+      }, delay);
+    }
 
-      if (linkId === "section-animated-cv") {
-        const iframe = document.querySelector("iframe");
-        iframe.contentWindow.postMessage(
-          { type: "restart" },
-          "https://beaverdamdemo.github.io"
-        );
-      }
-    });
+    if (sectionId === "section-animated-cv") {
+      const iframe = document.querySelector("iframe");
+      iframe.contentWindow.postMessage(
+        { type: "restart" },
+        "https://beaverdamdemo.github.io"
+      );
+    }
   });
 })();
