@@ -24,9 +24,9 @@
         $wrapper.append(
           $("<div>").addClass("skill skill__label").text(skill.label)
         );
-        $wrapper.append(
-          $("<div>").addClass("skill skill__value").text(skill.value)
-        );
+        // $wrapper.append(
+        //   $("<div>").addClass("skill skill__value").text(skill.value)
+        // );
 
         const $bar = $("<div>").addClass("skill skill__bar");
         const $background = $("<div>").addClass("skill__bar__background");
@@ -76,16 +76,17 @@
     currentStep = step;
 
     $("main").css({
-      transform: `translateX(-${step * 20}%)`,
+      transform: `translateX(-${step * 16.66}%)`,
       transition: `transform ${diff * 0.8}s`,
     });
   });
 
   const sectionMap = {
-    "#a-link-0": "section-skills",
-    "#a-link-1": "fri-subjects",
-    "#a-link-2": "showroom",
-    "#a-link-3": "animated-cv",
+    "#a-link-0": "section-hi",
+    "#a-link-1": "section-skills",
+    "#a-link-2": "fri-subjects",
+    "#a-link-3": "showroom",
+    "#a-link-4": "animated-cv",
   };
 
   Object.entries(sectionMap).forEach(([linkId, sectionId]) => {
@@ -93,7 +94,7 @@
       $("main section").removeClass("active");
       $("#container").toggleClass("scrollable", sectionId === "animated-cv");
       $(`main section#${sectionId}`).addClass("active");
-      if (linkId === "#a-link-3") {
+      if (linkId === "#a-link-4") {
         const iframe = document.querySelector("iframe");
         iframe.contentWindow.postMessage(
           { type: "restart" },
