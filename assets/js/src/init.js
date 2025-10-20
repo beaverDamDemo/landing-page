@@ -93,15 +93,18 @@
   const sectionMap = {
     "#a-link-0": "section-hi",
     "#a-link-1": "section-skills",
-    "#a-link-2": "fri-subjects",
-    "#a-link-3": "showroom",
-    "#a-link-4": "animated-cv",
+    "#a-link-2": "section-fri-subjects",
+    "#a-link-3": "section-showroom",
+    "#a-link-4": "section-animated-cv",
   };
 
   Object.entries(sectionMap).forEach(([linkId, sectionId]) => {
     $(linkId).on("click", () => {
       $("main section").removeClass("active");
-      $("#container").toggleClass("scrollable", sectionId === "animated-cv");
+      $("#container").toggleClass(
+        "scrollable",
+        sectionId === "section-animated-cv"
+      );
       $(`main section#${sectionId}`).addClass("active");
 
       if (sectionId === "section-hi") {
@@ -112,7 +115,7 @@
         restartAnimation("#section-hi p:nth-of-type(3)");
       }
 
-      if (linkId === "animated-cv") {
+      if (linkId === "section-animated-cv") {
         const iframe = document.querySelector("iframe");
         iframe.contentWindow.postMessage(
           { type: "restart" },
