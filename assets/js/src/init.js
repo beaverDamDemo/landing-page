@@ -89,7 +89,7 @@
       transition: `transform ${diff * 0.8}s`,
     });
 
-    const sectionId = sectionMap[`#a-link-${step}`];
+    const sectionId = $(this).data("section");
 
     $("main section").removeClass("active");
     $("#container").toggleClass(
