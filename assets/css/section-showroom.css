@@ -1,5 +1,19 @@
 section#section-showroom {
   overflow: auto;
+  h4 {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #202b59;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+  }
 }
 
 section#section-showroom .wrapper {
