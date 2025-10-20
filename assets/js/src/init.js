@@ -14,6 +14,15 @@
 
   $(".loadbar").animate({ width: "100%" }, animationTime);
 
+  function restartAnimation(selector) {
+    const element = document.querySelector(selector);
+    if (!element) return;
+
+    element.style.animation = "none";
+    element.offsetHeight; // Trigger reflow
+    element.style.animation = "";
+  }
+
   $.getJSON("assets/json/data.json")
     .done((json) => {
       console.log(json);
@@ -94,7 +103,16 @@
       $("main section").removeClass("active");
       $("#container").toggleClass("scrollable", sectionId === "animated-cv");
       $(`main section#${sectionId}`).addClass("active");
-      if (linkId === "#a-link-4") {
+
+      if (sectionId === "section-hi") {
+        restartAnimation("#section-hi h1");
+        restartAnimation("#section-hi h2");
+        restartAnimation("#section-hi p:nth-of-type(1)");
+        restartAnimation("#section-hi p:nth-of-type(2)");
+        restartAnimation("#section-hi p:nth-of-type(3)");
+      }
+
+      if (linkId === "animated-cv") {
         const iframe = document.querySelector("iframe");
         iframe.contentWindow.postMessage(
           { type: "restart" },
