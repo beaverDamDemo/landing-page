@@ -13,6 +13,19 @@ body {
   overflow-y: scroll;
 }
 
+.font-abril {
+  font-family: "Abril Fatface", cursive;
+}
+
+/* .font-lobster {
+  font-family: "Lobster", cursive;
+} */
+
+.font-xxl {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -52,7 +65,7 @@ main section .wrapper {
   left: 0;
   width: 100%;
   min-height: 500px;
-  background: rgba(50, 50, 50, 0.55);
+  background: rgba(32, 32, 32, 0.55);
 }
 main #section-hi {
   color: #fff;
@@ -633,4 +646,35 @@ main #animated-cv {
 }
 main #linkedin {
   left: 83.3%;
+}
+
+#section-hi h1,
+#section-hi h2,
+#section-hi p {
+  opacity: 0;
+}
+#section-hi h1 {
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+#section-hi h2 {
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+#section-hi p {
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
