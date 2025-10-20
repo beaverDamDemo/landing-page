@@ -49,3 +49,10 @@
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 600px) {
+  #section-hi .wrapper {
+    width: 87.5%;
+    padding: 0 3.75%;
+    margin: 0;
+  }
+}

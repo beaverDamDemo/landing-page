@@ -24,6 +24,7 @@ body {
 .font-xxl {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
+  line-height: 1.175;
 }
 
 a {
@@ -59,7 +60,7 @@ main section {
   min-height: 100%;
 }
 
-main section .wrapper {
+section .wrapper {
   position: absolute;
   top: 0;
   left: 0;
