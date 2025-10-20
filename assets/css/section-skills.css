@@ -152,3 +152,29 @@ section#section-skills .wrapper {
     height: inherit;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #section-skills {
+    margin-top: 20px;
+  }
+  section#section-skills .wrapper {
+    overflow: auto;
+    margin: 0;
+    padding: 20px 3.75% 0 3.75%;
+    width: 88.5%;
+  }
+  section#section-skills .wrapper .skill-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 0 10px 20px 10px;
+  }
+  section#section-skills .wrapper .skill-wrapper .skill {
+    font-size: 0.9rem;
+    line-height: 150%;
+  }
+  section#section-skills .wrapper .skill-wrapper .skill.skill__bar {
+    height: 1rem;
+    top: 25px;
+  }
+}
