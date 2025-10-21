@@ -15,8 +15,8 @@
 
 #section-fri-subjects {
   .subjects-container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 688px;
+    margin: 30px auto 0 auto;
     background: #34495e;
     padding: 30px;
     border-radius: 10px;

@@ -1,15 +1,8 @@
-section#section-skills {
+#section-skills {
   overflow: auto;
-}
-
-section#section-skills .wrapper {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  width: 688px;
-  margin: 0 auto;
-  padding: 20px;
+  .wrapper {
+    width: 688px;
+  }
 }
 
 .skill-wrapper {

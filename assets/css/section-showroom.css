@@ -1,5 +1,30 @@
-section#section-showroom {
+#section-showroom {
   overflow: auto;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 1400px;
+    padding: 0 0;
+  }
+}
+
+#section-showroom a {
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 240px;
+  height: 320px;
+  max-height: 320px;
+  padding: 10px;
+  border: 1px solid #202b59;
+  background-color: rgba(238, 238, 238, 0.8);
+  box-sizing: border-box;
+  transition: background 0.6s 0.4s;
+  overflow-y: hidden;
   h4 {
     margin-top: 3px;
     margin-bottom: 6px;
@@ -16,37 +41,12 @@ section#section-showroom {
   }
 }
 
-section#section-showroom .wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: flex-start;
-  height: 1400px;
-  margin-top: 30px;
-}
-
-section#section-showroom a {
-  margin-top: 10px;
-  margin-bottom: 0;
-  width: 240px;
-  height: 320px;
-  max-height: 320px;
-  padding: 10px;
-  border: 1px solid #202b59;
-  background-color: rgba(238, 238, 238, 0.8);
-  box-sizing: border-box;
-  transition: background 0.6s 0.4s;
-  overflow-y: hidden;
-}
-
-section#section-showroom a:hover {
+#section-showroom a:hover {
   background-color: #fff;
   transition: background 0.7s;
 }
 
-section#section-showroom a img {
+#section-showroom a img {
   margin-top: 10px;
   width: 220px;
   height: auto;
