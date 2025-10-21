@@ -103,22 +103,39 @@
 
   function animateSectionSkills() {
     const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
+    const labels = gsap.utils.toArray("#section-skills .skill__label");
 
     gsap.set(bars, { width: "100%" });
+    gsap.set(labels, { opacity: 0, x: -30 });
 
     sectionSkillsTimeline = gsap.timeline();
 
-    sectionSkillsTimeline.to(bars, {
-      width: (i, target) => target.dataset.targetwidth || "0%",
-      duration: 1,
+    sectionSkillsTimeline.to(labels, {
+      opacity: 1,
+      x: 0,
+      duration: 0.6,
       ease: "power2.out",
       stagger: 0.075,
     });
+
+    sectionSkillsTimeline.to(
+      bars,
+      {
+        width: (i, target) => target.dataset.targetwidth || "0%",
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.075,
+      },
+      "-=0.4"
+    );
   }
 
   function resetSectionSkills() {
     const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
+    const labels = gsap.utils.toArray("#section-skills .skill__label");
+
     gsap.set(bars, { width: "100%" });
+    gsap.set(labels, { opacity: 0, x: -30 });
   }
 
   resetSectionHi();
