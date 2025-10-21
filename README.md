@@ -1,3 +1,7 @@
+# run with npm
+
+npm run start
+
 # To run with php
 
 php -S localhost:4200
