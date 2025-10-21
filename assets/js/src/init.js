@@ -3,6 +3,7 @@
 
   let currentStep = 0;
   let sectionHiTimeline = null;
+  let sectionSkillsTimeline = null;
   document.body.classList.remove("loading");
 
   const now = Date.now();
@@ -105,9 +106,9 @@
 
     gsap.set(bars, { width: "100%" });
 
-    const tl = gsap.timeline();
+    sectionSkillsTimeline = gsap.timeline();
 
-    tl.to(bars, {
+    sectionSkillsTimeline.to(bars, {
       width: (i, target) => target.dataset.targetwidth || "0%",
       duration: 1,
       ease: "power2.out",
@@ -174,6 +175,12 @@
       setTimeout(() => {
         animateSectionSkills();
       }, delay);
+    } else {
+      if (sectionSkillsTimeline) {
+        sectionSkillsTimeline.kill();
+        sectionSkillsTimeline = null;
+      }
+      resetSectionSkills();
     }
   });
 })();
