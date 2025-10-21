@@ -53,9 +53,13 @@
   height: auto;
 }
 @media (max-width: 600px) {
+  #section-showroom {
+    overflow: visible;
+  }
   #section-showroom .wrapper {
     width: 87.5%;
-    padding: 0 3.75%;
+    padding: 0 3.75% 30px 3.75%;
     margin: 0;
+    height: 725%;
   }
 }
