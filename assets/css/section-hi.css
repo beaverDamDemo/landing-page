@@ -6,39 +6,7 @@
 #section-hi p {
   opacity: 0;
 }
-#section-hi h1 {
-  animation: fadeSlideUp 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
 
-#section-hi h2 {
-  animation: fadeSlideUp 1s ease-out forwards;
-  animation-delay: 0.6s;
-}
-
-#section-hi p:nth-of-type(1) {
-  animation: fadeSlideUp 1s ease-out forwards;
-  animation-delay: 0.9s;
-}
-#section-hi p:nth-of-type(2) {
-  animation: fadeSlideUp 1s ease-out forwards;
-  animation-delay: 1.2s;
-}
-#section-hi p:nth-of-type(3) {
-  animation: fadeSlideUp 1s ease-out forwards;
-  animation-delay: 1.5s;
-}
-
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media screen and (max-width: 600px) {
   #section-hi .wrapper {
     width: 87.5%;

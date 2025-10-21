@@ -14,15 +14,6 @@
 
   $(".loadbar").animate({ width: "100%" }, animationTime);
 
-  function restartAnimation(selector) {
-    const element = document.querySelector(selector);
-    if (!element) return;
-
-    element.style.animation = "none";
-    element.offsetHeight; // Trigger reflow
-    element.style.animation = "";
-  }
-
   $.getJSON("assets/json/data.json")
     .done((json) => {
       $(".preloader-wrapper").removeClass("active");
@@ -71,6 +62,42 @@
 
   $("main, .navigation-wrapper").addClass("active");
 
+  function animateSectionHi() {
+    const tl = gsap.timeline();
+
+    tl.to("#section-hi h1", {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      delay: 0.3,
+      ease: "power2.out",
+    })
+      .to("#section-hi h2", {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        delay: -1.0,
+        ease: "power2.out",
+      })
+      .to("#section-hi p", {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        delay: -1.0,
+        stagger: 0.4,
+        ease: "power2.out",
+      });
+  }
+  function resetSectionHi() {
+    gsap.set("#section-hi h1, #section-hi h2, #section-hi p", {
+      opacity: 0,
+      y: 150,
+    });
+  }
+
+  resetSectionHi();
+  animateSectionHi();
+
   $("#playButton").one("click", () => {
     $("#playButton").addClass("hidden");
     if (createjs.WebAudioPlugin.isSupported()) {
@@ -100,12 +127,10 @@
     if (sectionId === "section-hi") {
       const delay = diff * 800;
       setTimeout(() => {
-        restartAnimation("#section-hi h1");
-        restartAnimation("#section-hi h2");
-        restartAnimation("#section-hi p:nth-of-type(1)");
-        restartAnimation("#section-hi p:nth-of-type(2)");
-        restartAnimation("#section-hi p:nth-of-type(3)");
+        animateSectionHi();
       }, delay);
+    } else {
+      resetSectionHi();
     }
 
     if (sectionId === "section-animated-cv") {
