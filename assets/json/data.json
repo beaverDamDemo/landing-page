@@ -1,52 +1,77 @@
 {
   "skills": [
     {
-      "label": "Angular",
-      "value": 0.8
+      "type": "Frontend Frameworks & Libraries",
+      "technologies": [
+        {
+          "label": "Angular",
+          "value": 0.85
+        },
+        {
+          "label": "jQuery",
+          "value": 0.55
+        },
+        {
+          "label": "Greensock animation",
+          "value": 0.5
+        },
+        {
+          "label": "Snap.svg",
+          "value": 0.5
+        },
+        {
+          "label": "Vue.js, Nuxtjs",
+          "value": 0.15
+        }
+      ]
     },
     {
-      "label": "jQuery",
-      "value": 0.55
+      "type": "Backend Frameworks & Libraries",
+      "technologies": [
+        {
+          "label": "Spring Boot (Java)",
+          "value": 0.45
+        },
+        {
+          "label": "ASP.NET Core API (C#)",
+          "value": 0.45
+        },
+        {
+          "label": "NestJS",
+          "value": 0.35
+        }
+      ]
     },
     {
-      "label": "Greensock animation",
-      "value": 0.5
+      "type": "Database Management Systems",
+      "technologies": [
+        {
+          "label": "SQL Statements",
+          "value": 0.5
+        }
+      ]
     },
     {
-      "label": "Snapsvg",
-      "value": 0.5
+      "type": "Design & Animation Tools",
+      "technologies": [
+        {
+          "label": "Adobe graphic tools",
+          "value": 0.25
+        },
+        {
+          "label": "Adobe Animate CC",
+          "value": 0.1
+        }
+      ]
     },
     {
-      "label": "Spring Boot (Java)",
-      "value": 0.45
-    },
-    {
-      "label": "ASP.NET Core API (C#)",
-      "value": 0.45
-    },
-    {
-      "label": "SQL",
-      "value": 0.4
-    },
-    {
-      "label": "NestJS",
-      "value": 0.35
-    },
-    {
-      "label": "Adobe graphic tools",
-      "value": 0.25
-    },
-    {
-      "label": "Docker",
-      "value": 0.2
-    },
-    {
-      "label": "Vuejs, Nuxtjs",
-      "value": 0.15
-    },
-    {
-      "label": "Adobe Animate CC",
-      "value": 0.1
+      "type": "DevOps",
+      "technologies": [
+        {
+          "label": "Docker",
+          "value": 0.2
+        }
+      ]
     }
   ]
 }

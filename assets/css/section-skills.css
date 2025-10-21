@@ -18,6 +18,10 @@
   line-height: 1.66;
 }
 
+.skill-category {
+  color: #ffe5c7;
+}
+
 .skill__label {
   width: 317px;
   position: absolute;

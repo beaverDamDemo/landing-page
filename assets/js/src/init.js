@@ -20,30 +20,39 @@
     .done((json) => {
       $(".preloader-wrapper").removeClass("active");
 
-      json.skills.forEach((skill) => {
-        const $wrapper = $("<div>").addClass("skill-wrapper");
-        $wrapper.append(
-          $("<div>").addClass("skill skill__label").text(skill.label)
-        );
-        // $wrapper.append(
-        //   $("<div>").addClass("skill skill__value").text(skill.value)
-        // );
+      json.skills.forEach((category) => {
+        // Optional: Add category heading
+        const $categoryHeading = $("<h2>")
+          .addClass("skill-category")
+          .text(category.type);
+        $("section#section-skills .wrapper").append($categoryHeading);
 
-        const $bar = $("<div>").addClass("skill skill__bar");
-        const $background = $("<div>").addClass("skill__bar__background");
-        const $fixed = $("<div>").addClass("skill__bar__fixed");
-        const $dynamic = $("<div>")
-          .addClass("skill__bar__dynamic")
-          .css("width", "100%")
-          .data("targetWidth", `${100 * (1 - skill.value)}%`)
-          .attr("data-targetwidth", `${100 * (1 - skill.value)}%`);
+        category.technologies.forEach((tech) => {
+          const $wrapper = $("<div>").addClass("skill-wrapper");
 
-        $fixed.append($dynamic);
-        $background.append($fixed);
-        $bar.append($background);
-        $wrapper.append($bar);
+          $wrapper.append(
+            $("<div>").addClass("skill skill__label").text(tech.label)
+          );
+          // Optional: show value
+          // $wrapper.append(
+          //   $("<div>").addClass("skill skill__value").text(tech.value)
+          // );
 
-        $("section#section-skills .wrapper").append($wrapper);
+          const $bar = $("<div>").addClass("skill skill__bar");
+          const $background = $("<div>").addClass("skill__bar__background");
+          const $fixed = $("<div>").addClass("skill__bar__fixed");
+          const $dynamic = $("<div>")
+            .addClass("skill__bar__dynamic")
+            .css("width", "100%")
+            .attr("data-targetwidth", `${100 * (1 - tech.value)}%`);
+
+          $fixed.append($dynamic);
+          $background.append($fixed);
+          $bar.append($background);
+          $wrapper.append($bar);
+
+          $("section#section-skills .wrapper").append($wrapper);
+        });
       });
     })
     .fail((jqxhr, textStatus, error) => {
