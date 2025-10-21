@@ -32,7 +32,9 @@
         const $fixed = $("<div>").addClass("skill__bar__fixed");
         const $dynamic = $("<div>")
           .addClass("skill__bar__dynamic")
-          .css("max-width", `${100 * (1 - skill.value)}%`);
+          .css("width", "100%")
+          .data("targetWidth", `${100 * (1 - skill.value)}%`)
+          .attr("data-targetwidth", `${100 * (1 - skill.value)}%`);
 
         $fixed.append($dynamic);
         $background.append($fixed);
@@ -94,6 +96,24 @@
       y: 150,
     });
   }
+  function animateSectionSkills() {
+    const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
+
+    gsap.set(bars, { width: "100%" });
+
+    const tl = gsap.timeline();
+
+    tl.to(bars, {
+      width: (i, target) => target.dataset.targetwidth || "0%",
+      duration: 1,
+      ease: "power2.out",
+      stagger: 0.075,
+    });
+  }
+  function resetSectionSkills() {
+    const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
+    gsap.set(bars, { width: "100%" });
+  }
 
   resetSectionHi();
   animateSectionHi();
@@ -139,6 +159,12 @@
         { type: "restart" },
         "https://beaverdamdemo.github.io"
       );
+    } else if (sectionId === "section-skills") {
+      const delay = diff * 800;
+      resetSectionSkills();
+      setTimeout(() => {
+        animateSectionSkills();
+      }, delay);
     }
   });
 })();

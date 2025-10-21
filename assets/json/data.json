@@ -37,12 +37,12 @@
       "value": 0.25
     },
     {
-      "label": "Vuejs, Nuxtjs",
-      "value": 0.15
-    },
-    {
       "label": "Docker",
       "value": 0.2
+    },
+    {
+      "label": "Vuejs, Nuxtjs",
+      "value": 0.15
     },
     {
       "label": "Adobe Animate CC",
