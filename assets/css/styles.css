@@ -66,7 +66,7 @@ main {
 
 main section {
   position: absolute;
-  width: 16.6%;
+  width: 16.67%;
   min-height: 100%;
 }
 
@@ -284,17 +284,17 @@ main #section-hi {
   left: 0%;
 }
 main #section-skills {
-  left: 16.6%;
+  left: 16.67%;
 }
 main #section-fri-subjects {
-  left: 33.3%;
+  left: 33.33%;
 }
 main #section-showroom {
   left: 50%;
 }
 main #section-animated-cv {
-  left: 66.7%;
+  left: 66.67%;
 }
 main #linkedin {
-  left: 83.3%;
+  left: 83.33%;
 }
