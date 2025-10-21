@@ -264,6 +264,11 @@ main {
   width: 600%;
   min-height: inherit;
 }
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 0;
+  }
+}
 
 main section {
   position: absolute;

@@ -39,7 +39,7 @@
 @media (max-width: 600px) {
   #section-fri-subjects .subjects-container {
     width: calc(100% - 75px);
-    margin: 20px 0 20px 0;
+    margin: 0px 0 20px 0;
   }
   #section-fri-subjects .subjects-title {
     font-size: 24px;
