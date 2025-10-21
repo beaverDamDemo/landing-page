@@ -2,6 +2,7 @@
   "use strict";
 
   let currentStep = 0;
+  let sectionHiTimeline = null;
   document.body.classList.remove("loading");
 
   const now = Date.now();
@@ -65,15 +66,16 @@
   $("main, .navigation-wrapper").addClass("active");
 
   function animateSectionHi() {
-    const tl = gsap.timeline();
+    sectionHiTimeline = gsap.timeline();
 
-    tl.to("#section-hi h1", {
-      opacity: 1,
-      y: 0,
-      duration: 1.5,
-      delay: 0.3,
-      ease: "power2.out",
-    })
+    sectionHiTimeline
+      .to("#section-hi h1", {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        delay: 0.3,
+        ease: "power2.out",
+      })
       .to("#section-hi h2", {
         opacity: 1,
         y: 0,
@@ -90,12 +92,14 @@
         ease: "power2.out",
       });
   }
+
   function resetSectionHi() {
     gsap.set("#section-hi h1, #section-hi h2, #section-hi p", {
       opacity: 0,
       y: 150,
     });
   }
+
   function animateSectionSkills() {
     const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
 
@@ -110,6 +114,7 @@
       stagger: 0.075,
     });
   }
+
   function resetSectionSkills() {
     const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
     gsap.set(bars, { width: "100%" });
@@ -150,6 +155,10 @@
         animateSectionHi();
       }, delay);
     } else {
+      if (sectionHiTimeline) {
+        sectionHiTimeline.kill();
+        sectionHiTimeline = null;
+      }
       resetSectionHi();
     }
 
