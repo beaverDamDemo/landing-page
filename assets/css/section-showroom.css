@@ -9,7 +9,8 @@
     align-items: flex-start;
     align-content: flex-start;
     height: 1400px;
-    padding: 0 0;
+    padding: 5px 10px;
+    width: unset;
   }
 }
 
