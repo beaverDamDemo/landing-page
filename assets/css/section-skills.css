@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 3rem;
+  height: 2.5rem;
   margin-bottom: 3px;
   position: relative;
   width: inherit;
@@ -14,7 +14,7 @@
 
 .skill {
   color: #fff;
-  font-size: 1.33rem;
+  font-size: 1.2rem;
   line-height: 1.66;
 }
 
@@ -39,10 +39,10 @@
 .skill__bar {
   opacity: 0.75;
   width: 297px;
-  height: 1.45rem;
+  height: 1.25rem;
   position: absolute;
   left: 390px;
-  top: 0.4rem;
+  top: 0.5rem;
   overflow: hidden;
 }
 
