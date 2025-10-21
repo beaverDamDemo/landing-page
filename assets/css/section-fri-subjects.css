@@ -4,14 +4,13 @@
 }
 
 #section-fri-subjects div {
-  background: #fff;
   padding: 1rem 2rem;
 }
 
 #section-fri-subjects {
   .subjects-container {
     margin: 0 auto 0 auto;
-    background: #34495e;
+    background: #202b59;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -19,7 +18,7 @@
   }
   .subjects-title {
     text-align: center;
-    color: #1abc9c;
+    color: #ffe5c7;
     margin-bottom: 30px;
   }
   .subject-list {
@@ -30,7 +29,7 @@
     padding: 12px 18px;
     margin-bottom: 8px;
     background: #3d566e;
-    border-left: 5px solid #1abc9c;
+    border-left: 5px solid #ffe5c7;
     border-radius: 6px;
     transition: background 0.3s ease;
   }
