@@ -23,8 +23,8 @@ body {
 
 .font-xxl {
   font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.175;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
 }
 
 h1,
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  line-height: 1.175;
+  line-height: 1.2;
 }
 
 a {
@@ -153,8 +153,24 @@ header {
   width: 24px;
   height: 24px;
   margin-right: 4px;
-  background-size: 24px auto;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-css3,
+.logo-es6,
+.logo-html5,
+.logo-snapsvg,
+.logo-svg,
+.logo-vue,
+.logo-aiven,
+.logo-asp-net,
+.logo-angular,
+.logo-fastapi,
+.logo-jinja2,
+.logo-docker {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo-css3 {
@@ -262,35 +278,6 @@ header {
   .menu a:last-child::after {
     top: 4px;
   }
-}
-
-.logo {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  float: left;
-  margin-right: 4px;
-  background-repeat: no-repeat;
-  background-size: 24px auto;
-}
-.logo.logo-css3 {
-  background: url("../images/logo-css3.svg");
-}
-.logo.logo-es6 {
-  background: url("../images/logo-es6.svg");
-}
-.logo.logo-html5 {
-  background: url("../images/logo-html5.svg");
-}
-.logo.logo-snapsvg {
-  background: url("../images/logo-snapsvg.svg");
-}
-.logo.logo-svg {
-  background: url("../images/logo-svg.svg");
-}
-.logo.logo-vue {
-  background: url("../images/logo-vue.svg");
 }
 
 main #section-hi {
