@@ -25,7 +25,6 @@
 
   $.getJSON("assets/json/data.json")
     .done((json) => {
-      console.log(json);
       $(".preloader-wrapper").removeClass("active");
 
       json.skills.forEach((skill) => {
