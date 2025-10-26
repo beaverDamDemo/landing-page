@@ -25,7 +25,7 @@
         const $categoryHeading = $("<h2>")
           .addClass("skill-category")
           .text(category.type);
-        $("section#section-skills .wrapper").append($categoryHeading);
+        $("section#section-2-skills .wrapper").append($categoryHeading);
 
         category.technologies.forEach((tech) => {
           const $wrapper = $("<div>").addClass("skill-wrapper");
@@ -51,7 +51,7 @@
           $bar.append($background);
           $wrapper.append($bar);
 
-          $("section#section-skills .wrapper").append($wrapper);
+          $("section#section-2-skills .wrapper").append($wrapper);
         });
       });
     })
@@ -79,21 +79,21 @@
     sectionHiTimeline = gsap.timeline();
 
     sectionHiTimeline
-      .to("#section-hi h1", {
+      .to("#section-1-hi h1", {
         opacity: 1,
         y: 0,
         duration: 1.5,
         delay: 0.3,
         ease: "power2.out",
       })
-      .to("#section-hi h2", {
+      .to("#section-1-hi h2", {
         opacity: 1,
         y: 0,
         duration: 1.5,
         delay: -1.0,
         ease: "power2.out",
       })
-      .to("#section-hi p", {
+      .to("#section-1-hi p", {
         opacity: 1,
         y: 0,
         duration: 1.5,
@@ -104,15 +104,15 @@
   }
 
   function resetSectionHi() {
-    gsap.set("#section-hi h1, #section-hi h2, #section-hi p", {
+    gsap.set("#section-1-hi h1, #section-1-hi h2, #section-1-hi p", {
       opacity: 0,
       y: 150,
     });
   }
 
   function animateSectionSkills() {
-    const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
-    const labels = gsap.utils.toArray("#section-skills .skill__label");
+    const bars = gsap.utils.toArray("#section-2-skills .skill__bar__dynamic");
+    const labels = gsap.utils.toArray("#section-2-skills .skill__label");
 
     gsap.set(bars, { width: "100%" });
     gsap.set(labels, { opacity: 0, x: -30 });
@@ -140,8 +140,8 @@
   }
 
   function resetSectionSkills() {
-    const bars = gsap.utils.toArray("#section-skills .skill__bar__dynamic");
-    const labels = gsap.utils.toArray("#section-skills .skill__label");
+    const bars = gsap.utils.toArray("#section-2-skills .skill__bar__dynamic");
+    const labels = gsap.utils.toArray("#section-2-skills .skill__label");
 
     gsap.set(bars, { width: "100%" });
     gsap.set(labels, { opacity: 0, x: -30 });
@@ -176,7 +176,7 @@
     );
     $(`main section#${sectionId}`).addClass("active");
 
-    if (sectionId === "section-hi") {
+    if (sectionId === "section-1-hi") {
       const delay = diff * 800;
       setTimeout(() => {
         animateSectionHi();
@@ -195,7 +195,7 @@
         { type: "restart" },
         "https://beaverdamdemo.github.io"
       );
-    } else if (sectionId === "section-skills") {
+    } else if (sectionId === "section-2-skills") {
       const delay = diff * 800;
       resetSectionSkills();
       setTimeout(() => {

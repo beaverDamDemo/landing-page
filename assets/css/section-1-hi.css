@@ -1,14 +1,14 @@
-#section-hi {
+#section-1-hi {
   color: #fff;
 }
-#section-hi h1,
-#section-hi h2,
-#section-hi p {
+#section-1-hi h1,
+#section-1-hi h2,
+#section-1-hi p {
   opacity: 0;
 }
 
 @media screen and (max-width: 600px) {
-  #section-hi .wrapper {
+  #section-1-hi .wrapper {
     width: 87.5%;
     padding: 0 3.75%;
     margin: 0;

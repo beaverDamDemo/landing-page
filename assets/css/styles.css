@@ -276,16 +276,16 @@ main section {
   min-height: 100%;
 }
 
-main #section-hi {
+main #section-1-hi {
   left: 0%;
 }
-main #section-skills {
+main #section-2-skills {
   left: 16.67%;
 }
-main #section-fri-subjects {
+main #section-3-uni-subjects {
   left: 33.33%;
 }
-main #section-showroom {
+main #section-4-showroom {
   left: 50%;
 }
 main #section-animated-cv {

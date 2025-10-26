@@ -1,13 +1,13 @@
-#section-fri-subjects h2 {
+#section-3-uni-subjects h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#section-fri-subjects div {
+#section-3-uni-subjects div {
   padding: 1rem 2rem;
 }
 
-#section-fri-subjects {
+#section-3-uni-subjects {
   .subjects-container {
     margin: 0 auto 0 auto;
     background: #202b59;
@@ -36,15 +36,15 @@
 }
 
 @media (max-width: 600px) {
-  #section-fri-subjects .subjects-container {
+  #section-3-uni-subjects .subjects-container {
     width: calc(100% - 75px);
     margin: 0px 0 20px 0;
   }
-  #section-fri-subjects .subjects-title {
+  #section-3-uni-subjects .subjects-title {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  #section-fri-subjects .subject-list li {
+  #section-3-uni-subjects .subject-list li {
     padding: 10px 14px;
     font-size: 14px;
   }

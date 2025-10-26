@@ -1,4 +1,4 @@
-#section-showroom {
+#section-4-showroom {
   overflow: auto;
 
   .wrapper {
@@ -14,7 +14,7 @@
   }
 }
 
-#section-showroom a {
+#section-4-showroom a {
   margin-top: 10px;
   margin-bottom: 0;
   width: 240px;
@@ -42,21 +42,21 @@
   }
 }
 
-#section-showroom a:hover {
+#section-4-showroom a:hover {
   background-color: #fff;
   transition: background 0.7s;
 }
 
-#section-showroom a img {
+#section-4-showroom a img {
   margin-top: 10px;
   width: 220px;
   height: auto;
 }
 @media (max-width: 600px) {
-  #section-showroom {
+  #section-4-showroom {
     overflow: visible;
   }
-  #section-showroom .wrapper {
+  #section-4-showroom .wrapper {
     width: 87.5%;
     padding: 0 3.75% 30px 3.75%;
     margin: 0;
