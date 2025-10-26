@@ -4,6 +4,7 @@
   let currentStep = 0;
   let sectionHiTimeline = null;
   let sectionSkillsTimeline = null;
+  let sectionUniTimeline = null;
   document.body.classList.remove("loading");
 
   const now = Date.now();
@@ -147,6 +148,31 @@
     gsap.set(labels, { opacity: 0, x: -30 });
   }
 
+  function animateSectionUniSubjects() {
+    const items = gsap.utils.toArray(
+      "#section-3-uni-subjects .subject-list li"
+    );
+
+    gsap.set(items, { opacity: 0, x: -30 });
+
+    sectionUniTimeline = gsap.timeline();
+
+    sectionUniTimeline.to(items, {
+      opacity: 1,
+      x: 0,
+      duration: 0.6,
+      ease: "power2.out",
+      stagger: 0.1,
+    });
+  }
+
+  function resetSectionUniSubjects() {
+    const items = gsap.utils.toArray(
+      "#section-3-uni-subjects .subject-list li"
+    );
+    gsap.set(items, { opacity: 0, x: -30 });
+  }
+
   resetSectionHi();
   animateSectionHi();
 
@@ -201,7 +227,18 @@
       setTimeout(() => {
         animateSectionSkills();
       }, delay);
+    } else if (sectionId === "section-3-uni-subjects") {
+      const delay = diff * 800;
+      resetSectionUniSubjects();
+      setTimeout(() => {
+        animateSectionUniSubjects();
+      }, delay);
     } else {
+      if (sectionUniTimeline) {
+        sectionUniTimeline.kill();
+        sectionUniTimeline = null;
+      }
+      resetSectionUniSubjects();
       if (sectionSkillsTimeline) {
         sectionSkillsTimeline.kill();
         sectionSkillsTimeline = null;
