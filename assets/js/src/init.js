@@ -128,19 +128,19 @@
       tl.to(label, {
         opacity: 1,
         x: 0,
-        duration: 0.2,
+        duration: 0.225,
         ease: "power2.out",
       }).to(
         bar,
         {
           width: targetWidth,
-          duration: 0.4,
+          duration: 0.55,
           ease: "power2.out",
         },
         "-=0.1"
       );
 
-      sectionSkillsTimeline.add(tl, i * 0.15);
+      sectionSkillsTimeline.add(tl, i * 0.0875);
     });
   }
 
@@ -164,9 +164,9 @@
     sectionUniTimeline.to(items, {
       opacity: 1,
       x: 0,
-      duration: 0.6,
+      duration: 0.4,
       ease: "power2.out",
-      stagger: 0.1,
+      stagger: 0.0875,
     });
   }
 
