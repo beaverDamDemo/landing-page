@@ -120,24 +120,28 @@
 
     sectionSkillsTimeline = gsap.timeline();
 
-    sectionSkillsTimeline.to(labels, {
-      opacity: 1,
-      x: 0,
-      duration: 0.6,
-      ease: "power2.out",
-      stagger: 0.075,
-    });
+    labels.forEach((label, i) => {
+      const bar = bars[i];
+      const targetWidth = bar.dataset.targetwidth || "0%";
 
-    sectionSkillsTimeline.to(
-      bars,
-      {
-        width: (i, target) => target.dataset.targetwidth || "0%",
-        duration: 1,
+      const tl = gsap.timeline();
+      tl.to(label, {
+        opacity: 1,
+        x: 0,
+        duration: 0.2,
         ease: "power2.out",
-        stagger: 0.075,
-      },
-      "-=0.4"
-    );
+      }).to(
+        bar,
+        {
+          width: targetWidth,
+          duration: 0.4,
+          ease: "power2.out",
+        },
+        "-=0.1"
+      );
+
+      sectionSkillsTimeline.add(tl, i * 0.15);
+    });
   }
 
   function resetSectionSkills() {
