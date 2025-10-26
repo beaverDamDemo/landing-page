@@ -1,0 +1,10 @@
+:root {
+  --accent-color: #ffe5c7;
+  --primary-dark: #202b59;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-text: #202b59;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.accent-color {
+  color: var(--accent-color);
+}

@@ -64,7 +64,7 @@ header {
   right: 0;
   height: 66px;
   line-height: 66px;
-  background-color: #202b59;
+  background-color: var(--primary-dark);
   color: #fff;
   z-index: 1;
 }
@@ -87,7 +87,7 @@ header {
 
 .menu a.active {
   background: #fff;
-  color: #202b59;
+  color: var(--primary-dark);
   position: relative;
 }
 
