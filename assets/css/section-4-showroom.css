@@ -9,7 +9,7 @@
     align-items: flex-start;
     align-content: flex-start;
     height: 1400px;
-    padding: 5px 10px;
+    padding: 16px 10px;
     width: unset;
   }
 }
@@ -28,6 +28,7 @@
   height: 320px;
   width: 240px;
   padding: 10px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   overflow: hidden;
   .card-content {
@@ -70,9 +71,11 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-top: auto; /* Push image to bottom */
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: auto;
+  margin-bottom: 4px; /* Reduced from 10px to 4px */
 }
-
 #section-4-showroom a .logo-group {
   margin-bottom: 10px;
 }
