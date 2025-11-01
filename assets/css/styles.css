@@ -127,41 +127,22 @@ header {
 }
 
 .logo {
-  float: left;
-  width: 24px;
   height: 24px;
   margin-right: 4px;
+  display: inline-block;
+  width: auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logo-css3,
-.logo-es6,
-.logo-html5,
-.logo-snapsvg,
-.logo-svg,
-.logo-vue,
-.logo-aiven,
-.logo-asp-net,
-.logo-angular,
-.logo-fastapi,
-.logo-jinja2,
-.logo-docker {
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  width: 20px;
+  min-width: 20px;
 }
 
 .logo-css3 {
   background-image: url("../images/logo-css3.svg");
-  height: 28px;
-  width: 28px;
-  margin-top: -2px;
 }
 .logo-es6 {
   background-image: url("../images/logo-es6.svg");
-  height: 29px;
-  width: 29px;
-  margin-left: 3px;
 }
 .logo-html5 {
   background-image: url("../images/logo-html5.svg");
@@ -177,7 +158,6 @@ header {
 }
 .logo-aiven {
   background-image: url("../images/logo-aiven.svg");
-  height: 19px;
 }
 .logo-asp-net {
   background-image: url("../images/logo-asp-net.svg");
@@ -187,16 +167,12 @@ header {
 }
 .logo-fastapi {
   background-image: url("../images/tinified/fastapi.png");
-  height: 21px;
-  width: 21px;
-  margin-top: 1px;
 }
 .logo-jinja2 {
   background-image: url("../images/tinified/jinja2.png");
 }
 .logo-docker {
   background-image: url("../images/tinified/docker-mark-blue.png");
-  height: 20px;
 }
 
 @media screen and (max-width: 1919px) {
