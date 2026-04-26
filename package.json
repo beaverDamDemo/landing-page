@@ -1,7 +1,6 @@
 {
   "name": "landing-page",
   "version": "1.0.0",
-  "description": "php -S localhost:4200",
   "main": "index.js",
   "scripts": {
     "start": "vite",
