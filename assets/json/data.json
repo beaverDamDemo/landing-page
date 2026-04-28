@@ -5,23 +5,27 @@
       "technologies": [
         {
           "label": "Angular",
-          "value": 0.85
+          "value": 0.9
         },
         {
-          "label": "jQuery",
-          "value": 0.55
+          "label": "React",
+          "value": 0.65
         },
         {
           "label": "Greensock animation",
-          "value": 0.5
+          "value": 0.55
         },
         {
           "label": "Snap.svg",
           "value": 0.5
         },
         {
+          "label": "jQuery",
+          "value": 0.4
+        },
+        {
           "label": "Vue.js, Nuxtjs",
-          "value": 0.15
+          "value": 0.25
         }
       ]
     },
@@ -29,15 +33,15 @@
       "type": "Backend Frameworks & Libraries",
       "technologies": [
         {
+          "label": "NestJS",
+          "value": 0.55
+        },
+        {
           "label": "Spring Boot (Java)",
           "value": 0.45
         },
         {
           "label": "ASP.NET Core API (C#)",
-          "value": 0.45
-        },
-        {
-          "label": "NestJS",
           "value": 0.35
         }
       ]
@@ -56,11 +60,11 @@
       "technologies": [
         {
           "label": "Adobe graphic tools",
-          "value": 0.25
+          "value": 0.35
         },
         {
           "label": "Adobe Animate CC",
-          "value": 0.1
+          "value": 0.15
         }
       ]
     },
@@ -69,7 +73,11 @@
       "technologies": [
         {
           "label": "Docker",
-          "value": 0.2
+          "value": 0.4
+        },
+        {
+          "label": "Github Actions",
+          "value": 0.3
         }
       ]
     }
