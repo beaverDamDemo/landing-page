@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext');
 
 /* * {
   margin: 0;
@@ -6,15 +6,15 @@
 } */
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   line-height: 1.66;
-  background: url("../images/bg-hi.jpg") center top / cover repeat;
+  background: url('../images/bg-hi.jpg') center top / cover repeat;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .font-abril {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 /* .font-lobster {
@@ -49,7 +49,7 @@ a {
   margin: 0 auto;
   width: 1024px;
   min-height: 1200px;
-  height: 1815px;
+  height: 2242px;
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ header {
 }
 
 .menu a.active::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -108,12 +108,12 @@ header {
 }
 
 .menu a:last-child::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 16px;
   width: 30px;
   height: 32px;
-  background: url("../images/Logo-2CRev-75px-R.png") no-repeat -53px 7px;
+  background: url('../images/Logo-2CRev-75px-R.png') no-repeat -53px 7px;
   background-size: 75px auto;
 }
 
@@ -138,51 +138,51 @@ header {
 }
 
 .logo-css3 {
-  background-image: url("../images/logo-css3.svg");
+  background-image: url('../images/logo-css3.svg');
 }
 .logo-es6 {
-  background-image: url("../images/logo-es6.svg");
+  background-image: url('../images/logo-es6.svg');
 }
 .logo-html5 {
-  background-image: url("../images/logo-html5.svg");
+  background-image: url('../images/logo-html5.svg');
 }
 .logo-snapsvg {
-  background-image: url("../images/logo-snapsvg.svg");
+  background-image: url('../images/logo-snapsvg.svg');
 }
 .logo-svg {
-  background-image: url("../images/logo-svg.svg");
+  background-image: url('../images/logo-svg.svg');
 }
 .logo-vue {
-  background-image: url("../images/logo-vue.svg");
+  background-image: url('../images/logo-vue.svg');
 }
 .logo-aiven {
-  background-image: url("../images/logo-aiven.svg");
+  background-image: url('../images/logo-aiven.svg');
 }
 .logo-asp-net {
-  background-image: url("../images/logo-asp-net.svg");
+  background-image: url('../images/logo-asp-net.svg');
 }
 .logo-angular {
-  background-image: url("../images/logo-angular.svg");
+  background-image: url('../images/logo-angular.svg');
 }
 .logo-fastapi {
-  background-image: url("../images/tinified/fastapi.png");
+  background-image: url('../images/tinified/fastapi.png');
 }
 .logo-jinja2 {
-  background-image: url("../images/tinified/jinja2.png");
+  background-image: url('../images/tinified/jinja2.png');
 }
 .logo-docker {
-  background-image: url("../images/tinified/docker-mark-blue.png");
+  background-image: url('../images/tinified/docker-mark-blue.png');
 }
 
 @media screen and (max-width: 1919px) {
   body {
-    background: url("../images/bg-md.jpg") center top / cover repeat;
+    background: url('../images/bg-md.jpg') center top / cover repeat;
   }
 }
 
 @media screen and (max-width: 1024px) {
   body {
-    background: url("../images/bg-lo.jpg") center top / cover repeat;
+    background: url('../images/bg-lo.jpg') center top / cover repeat;
   }
 
   #container {
@@ -281,13 +281,9 @@ main #linkedin {
 }
 
 .wrapper {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  height: fit-content;
+  position: static;
   background: rgba(32, 32, 32, 0.55);
-  width: 688px;
+  width: auto;
   margin: 0 auto;
   padding: 20px 20px;
   border-radius: 10px;
