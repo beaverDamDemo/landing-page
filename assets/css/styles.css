@@ -129,7 +129,6 @@ header {
   height: 24px;
   margin-right: 4px;
   display: inline-block;
-  width: auto;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,11 +172,15 @@ header {
 .logo-docker {
   background-image: url('../images/tinified/docker-mark-blue.png');
 }
-
-@media screen and (max-width: 1919px) {
-  body {
-    background: url('../images/bg-md.jpg') center top / cover repeat;
-  }
+.logo-vibe-coding {
+  background-image: url('../images/tinified/logo-vibe-coding.png');
+  width: 36px;
+  min-width: 36px;
+}
+.logo-wip {
+  background-image: url('../images/tinified/logo-wip.png');
+  width: 24px;
+  min-width: 24px;
 }
 
 @media screen and (max-width: 1024px) {
