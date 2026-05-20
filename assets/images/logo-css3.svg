@@ -3,12 +3,12 @@
 
 <svg
    width="96.639618mm"
-   height="135.37357mm"
-   viewBox="0 0 96.639618 135.37357"
+   height="108.71949mm"
+   viewBox="0 0 96.639618 108.71949"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="new-logo-css3.svg"
+   sodipodi:docname="logo-css3.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -20,12 +20,12 @@
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
+     inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.2656969"
-     inkscape:cx="-619.12653"
-     inkscape:cy="269.10363"
+     inkscape:zoom="1.5030086"
+     inkscape:cx="-116.43313"
+     inkscape:cy="183.29901"
      inkscape:window-width="2400"
      inkscape:window-height="1411"
      inkscape:window-x="-9"
@@ -109,7 +109,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-110.06666,-53.710416)">
+     transform="translate(-110.06666,-80.364492)">
     <path
        d="m 197.64558,178.51297 -39.2594,10.57101 -39.25997,-10.57101 -9.05955,-98.148478 h 96.63962 z"
        fill="#2062af"
@@ -119,10 +119,6 @@
        d="m 158.38589,88.314366 v 92.338404 l 0.0888,0.0242 31.77097,-8.55515 7.33336,-83.807464 z"
        fill="#3c9cd7"
        id="path3"
-       style="stroke-width:0.288227" />
-    <path
-       d="m 136.1048,65.944497 v -5.841783 h 8.52316 V 53.710416 H 129.7125 v 18.067218 h 14.91546 v -5.833137 z m 23.85539,-5.841783 h 5.9588 V 53.710416 H 151.0021 v 6.392298 c 1.99568,1.995683 3.03647,2.950867 5.92277,5.837172 -1.68728,0 -5.92277,0.0061 -5.92277,0.0058 v 5.831984 h 14.91689 v -5.833137 z m 21.14202,0 h 5.95852 v -6.392298 h -14.91747 v 6.392298 c 1.99568,1.995683 3.03704,2.950867 5.92335,5.837172 -1.68671,0 -5.92335,0.0061 -5.92335,0.0058 v 5.831984 h 14.91776 v -5.833137 z"
-       id="path4"
        style="stroke-width:0.288227" />
     <path
        d="m 158.35102,112.85545 -28.09925,11.70259 0.93184,11.58644 27.16741,-11.61584 28.89907,-12.35571 1.19816,-11.85247 z"
