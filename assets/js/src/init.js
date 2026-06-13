@@ -5,6 +5,9 @@
   let sectionHiTimeline = null;
   let sectionSkillsTimeline = null;
   let sectionUniTimeline = null;
+  let sectionHiTimeoutId = null;
+  let sectionSkillsTimeoutId = null;
+  let sectionUniTimeoutId = null;
   document.body.classList.remove('loading');
 
   const now = Date.now();
@@ -111,6 +114,19 @@
     });
   }
 
+  function scheduleSectionWork(timeoutId, callback, delay) {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+
+    if (delay <= 0) {
+      callback();
+      return null;
+    }
+
+    return setTimeout(callback, delay);
+  }
+
   function animateSectionSkills() {
     const bars = gsap.utils.toArray('#section-2-skills .skill__bar__dynamic');
     const labels = gsap.utils.toArray('#section-2-skills .skill__label');
@@ -190,6 +206,7 @@
   $('nav a').on('click', function () {
     const step = parseInt(this.id.split('-')[2]);
     const diff = Math.abs(currentStep - step);
+    const transitionDelay = diff * 800;
     currentStep = step;
 
     $('main').css({
@@ -207,16 +224,25 @@
     $(`main section#${sectionId}`).addClass('active');
 
     if (sectionId === 'section-1-hi') {
-      const delay = diff * 800;
-      setTimeout(() => {
-        animateSectionHi();
-      }, delay);
+      sectionHiTimeoutId = scheduleSectionWork(
+        sectionHiTimeoutId,
+        () => {
+          animateSectionHi();
+        },
+        transitionDelay,
+      );
     } else {
       if (sectionHiTimeline) {
         sectionHiTimeline.kill();
         sectionHiTimeline = null;
       }
-      resetSectionHi();
+      sectionHiTimeoutId = scheduleSectionWork(
+        sectionHiTimeoutId,
+        () => {
+          resetSectionHi();
+        },
+        transitionDelay,
+      );
     }
 
     if (sectionId === 'section-animated-cv') {
@@ -226,28 +252,46 @@
         'https://beaverdamdemo.github.io',
       );
     } else if (sectionId === 'section-2-skills') {
-      const delay = diff * 800;
       resetSectionSkills();
-      setTimeout(() => {
-        animateSectionSkills();
-      }, delay);
+      sectionSkillsTimeoutId = scheduleSectionWork(
+        sectionSkillsTimeoutId,
+        () => {
+          animateSectionSkills();
+        },
+        transitionDelay,
+      );
     } else if (sectionId === 'section-3-uni-subjects') {
-      const delay = diff * 800;
       resetSectionUniSubjects();
-      setTimeout(() => {
-        animateSectionUniSubjects();
-      }, delay);
+      sectionUniTimeoutId = scheduleSectionWork(
+        sectionUniTimeoutId,
+        () => {
+          animateSectionUniSubjects();
+        },
+        transitionDelay,
+      );
     } else {
       if (sectionUniTimeline) {
         sectionUniTimeline.kill();
         sectionUniTimeline = null;
       }
-      resetSectionUniSubjects();
+      sectionUniTimeoutId = scheduleSectionWork(
+        sectionUniTimeoutId,
+        () => {
+          resetSectionUniSubjects();
+        },
+        transitionDelay,
+      );
       if (sectionSkillsTimeline) {
         sectionSkillsTimeline.kill();
         sectionSkillsTimeline = null;
       }
-      resetSectionSkills();
+      sectionSkillsTimeoutId = scheduleSectionWork(
+        sectionSkillsTimeoutId,
+        () => {
+          resetSectionSkills();
+        },
+        transitionDelay,
+      );
     }
   });
 })();
