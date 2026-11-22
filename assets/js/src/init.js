@@ -8,24 +8,14 @@
   let sectionHiTimeoutId = null;
   let sectionSkillsTimeoutId = null;
   let sectionUniTimeoutId = null;
-  document.body.classList.remove('loading');
 
-  const now = Date.now();
-  const pageLoadTime = now - performance.timing.navigationStart;
-  console.warn(`User-perceived page loading time: ${pageLoadTime}ms`);
-
-  const perfData = performance.timing;
-  const estimatedTime = perfData.loadEventEnd - perfData.navigationStart;
-  const animationTime = Math.min(estimatedTime, 5000);
-
-  $('.loadbar').animate({ width: '100%' }, animationTime);
+  $('.loadbar').animate({ width: '100%' }, 500);
 
   $.getJSON('assets/json/data.json')
     .done((json) => {
       $('.preloader-wrapper').removeClass('active');
 
       json.skills.forEach((category) => {
-        // Optional: Add category heading
         const $categoryHeading = $('<h2>')
           .addClass('skill-category')
           .text(category.type);
@@ -37,10 +27,6 @@
           $wrapper.append(
             $('<div>').addClass('skill skill__label').text(tech.label),
           );
-          // Optional: show value
-          // $wrapper.append(
-          //   $("<div>").addClass("skill skill__value").text(tech.value)
-          // );
 
           const $bar = $('<div>').addClass('skill skill__bar');
           const $background = $('<div>').addClass('skill__bar__background');
@@ -62,22 +48,6 @@
     .fail((jqxhr, textStatus, error) => {
       console.error('Failed to load skills JSON:', error);
     });
-
-  $('#header__icon').on('click', (e) => {
-    e.preventDefault();
-    $('body').toggleClass('with--sidebar');
-  });
-
-  $('#site-cache').on('click', () => {
-    $('body').removeClass('with--sidebar');
-  });
-
-  $('header a').on('click', function () {
-    $('header a').removeClass('active');
-    $(this).addClass('active');
-  });
-
-  $('main, .navigation-wrapper').addClass('active');
 
   function animateSectionHi() {
     sectionHiTimeline = gsap.timeline();
@@ -196,21 +166,17 @@
   resetSectionHi();
   animateSectionHi();
 
-  $('#playButton').one('click', () => {
-    $('#playButton').addClass('hidden');
-    if (createjs.WebAudioPlugin.isSupported()) {
-      createjs.WebAudioPlugin.context.resume();
-    }
-  });
+  $('nav a:not(.external-link)').on('click', function () {
+    $('nav a').removeClass('active');
+    $(this).addClass('active');
 
-  $('nav a').on('click', function () {
     const step = parseInt(this.id.split('-')[2]);
     const diff = Math.abs(currentStep - step);
     const transitionDelay = diff * 800;
     currentStep = step;
 
     $('main').css({
-      transform: `translateX(-${step * 16.66}%)`,
+      transform: `translateX(-${step * 20}%)`,
       transition: `transform ${diff * 0.8}s`,
     });
 

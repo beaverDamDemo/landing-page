@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext');
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 body {
   font-family: 'Roboto Slab', serif;
   line-height: 1.66;
@@ -16,10 +11,6 @@ body {
 .font-abril {
   font-family: 'Abril Fatface', cursive;
 }
-
-/* .font-lobster {
-  font-family: "Lobster", cursive;
-} */
 
 .font-xxl {
   font-size: 3.5rem;
@@ -197,10 +188,6 @@ header {
     margin: 0 auto;
     overflow: hidden;
   }
-
-  main {
-    margin-top: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -249,7 +236,7 @@ header {
 main {
   position: absolute;
   margin-top: 66px;
-  width: 600%;
+  width: 500%;
   min-height: inherit;
 }
 @media screen and (max-width: 768px) {
@@ -260,7 +247,7 @@ main {
 
 main section {
   position: absolute;
-  width: 16.67%;
+  width: 20%;
   min-height: 100%;
 }
 
@@ -268,19 +255,16 @@ main #section-1-hi {
   left: 0%;
 }
 main #section-2-skills {
-  left: 16.67%;
+  left: 20%;
 }
 main #section-3-uni-subjects {
-  left: 33.33%;
+  left: 40%;
 }
 main #section-4-showroom {
-  left: 50%;
+  left: 60%;
 }
 main #section-animated-cv {
-  left: 66.67%;
-}
-main #linkedin {
-  left: 83.33%;
+  left: 80%;
 }
 
 .wrapper {
